@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
 	  <div class="container">
-	    <div class="header-logo">
-	    	<a class="technomart-logo" href="#">
-	    		<img src="img/header-logo.png" alt="Техномарт">
-	    	</a>
+	   <div class="header-logo main-header-item">
+          <a class="technomart-logo" href="#">
+            Техномарт
+          </a>
 	    </div>
 	    <div class="header-search">
 	    	<a href="#" class="header-search-button">Поиск</a>
@@ -52,15 +53,15 @@
 				<li><div class="main-nav-button"><a class="title-navigation" href="#">Контакты</a></div></li>
 			</ul>
 	  </nav>
-	<section class="catalog-section-navigation">
-	  <a href="#" class="catalog-navigation-home-button">Домой</a>
-	  <a href="#" class="catalog-navigation-catalog-button">Каталог</a>
-	  <a href="#" class="catalog-navigation-instrument-button">Инструмент</a>
-	  <a href="#" class="catalog-navigation-item-button">Перфораторы</a>
+	<div class="breadcrumbs">
+	  <a href="#" class="breadcrumbs-home-button">Домой</a>
+	  <a href="#">Каталог</a>
+	  <a href="#">Инструмент</a>
+	  <a href="#">Перфораторы</a>
 	</section>
-	<section class="catalog-item-type-title">
+	<div class="catalog-item-type">
 		<p>Перфораторы</p>
-	</section>
+	</div>
 	<section class="filter-list">
 	  <div class="filter-list-title">Фильтр:</div>
 	  <!-- ЦЕНОВОЙ ФИЛЬТР СЮДА -->
@@ -68,15 +69,15 @@
 	      	<p>Производители</p>
 	        <div class="filter-brand">
 	  	      <label><input type="checkbox" name="BOSCH">BOSCH</label>
-	 	      <label><input type="checkbox" name="Интерскол">Интерскол</label>
+	 	      <label><input type="checkbox" name="interscol">Интерскол</label>
 	  	      <label><input type="checkbox" name="MAKIta">MAKIta</label>
 	  	      <label><input type="checkbox" name="Dewalt">Dewalt</label>
 	  	      <label><input type="checkbox" name="Hitachi">Hitachi</label>
 	        </div>
 	        <p>Питание</p>
 	        <div class="filter-type">
-              <label><input type="radio" name="brand-type" value="Аккумуляторные">Аккумуляторные</label>
-	  	      <label><input type="radio" name="brand-type" value="Сетевые">Сетевые</label>
+              <label><input type="radio" name="brand-type" value="Rechargeable">Аккумуляторные</label>
+	  	      <label><input type="radio" name="brand-type" value="power-supplyed">Сетевые</label>
 	        </div>
 	        <div class="filter-button">
 		      <button type='submit'>Показать</button>
@@ -88,21 +89,22 @@
 	    <div class="catalog-sorting-title">
 	      Сортировка
 	    </div>
-	    <div class="catalog-sorting-by-price">
+	    <a href="#" class="catalog-sorting-by-price">
 	    	По Цене
-	    </div>
-	    <div class="catalog-sorting-by-type">
+	    </a>
+	    <a href="#" class="catalog-sorting-by-type">
 	    	По типу
-	    </div>
-	    <div class="catalog-sorting-by-functional">
+	    </a>
+	    <a href="#" class="catalog-sorting-by-functional">
 	    	По функционалу
-	    </div>
-	    <a href="" class="catalog-sorting-increasing-button"><img src="#" alt="вверх"></a>
-	    <a href="" class="catalog-sorting-decreasing-button"><img src="#" alt="вниз"></a>
+	    </a>
+	    <a href="" class="catalog-increasing-button"><img src="#" alt="вверх"></a>
+	    <a href="" class="catalog-decreasing-button"><img src="#" alt="вниз"></a>
 	    button
 	  </section>
 	  <section class="catalog-items">
 	    <div class="catalog-item">
+	      <img src="img/bfg-3000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 3000
@@ -115,6 +117,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	    <img src="img/bfg-6000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 6000
@@ -138,6 +141,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	    <img src="img/bfg-3000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 3000
@@ -150,6 +154,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	  	<img src="img/bfg-6000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 6000
@@ -162,6 +167,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	  	<img src="img/bfg-2000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 2000
@@ -171,6 +177,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	  	<img src="img/bfg-3000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 3000
@@ -183,6 +190,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	  	<img src="img/bfg-6000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 6000
@@ -195,6 +203,7 @@
 	    </div>	  	
 	  </div>
 	  <div class="catalog-item">
+	  	<img src="img/bfg-2000.png" alt="Перфоратор">
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
 			BFG 2000
@@ -203,11 +212,11 @@
 	    	<a href="#" class="catalog-item-price-button">12500 Р.</a>
 	    </div>	  	
 	  </div>
-	  <div class="catalog-items-pages-buttons">
-	  	<a href="#"class="catalog-item-page-button">1</a>
-	  	<a href="#"class="catalog-item-page-button">2</a>
-	  	<a href="#"class="catalog-item-page-button">3</a>
-	  	<a href="#"class="catalog-item-next-button">Следующая</a>
+	  <div class="catalog-pagination">
+	  	<a href="#"class="catalog-pagination-button">1</a>
+	  	<a href="#"class="catalog-pagination-button">2</a>
+	  	<a href="#"class="catalog-pagination-button">3</a>
+	  	<a href="#"class="catalog-pagination-button">Следующая</a>
 	  </div>
 	  </section>
 	  <section class="about-perforators">
