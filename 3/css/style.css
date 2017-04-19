@@ -1,0 +1,209 @@
+body {
+	font-size: 13px;
+	line-height: 12px;
+	color: #000000;
+	font-family: Myriad Pro, "Arial", sans-serif;
+	font-weight: regular;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.main-header {
+	background-image: url("../img/header-background.png");
+	height:42px;
+}
+
+/* va не работает без lh*/
+.main-header-item {
+	line-height: 42px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.header-logo {
+	float: left;
+	text-align:center;
+	width:220px;
+	height: 47px;
+	background-image: url("../img/header-logo-button.jpg");
+}
+
+.header-logo a {
+	width:110px;
+	height: 47px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align:center;
+	background-size: cover;
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-weight: regular;
+	text-decoration: none;
+}
+
+.header-search {
+	vertical-align: middle;
+	margin-left:17px;
+	float:left;
+	display: inline-block;
+}
+
+.header-right {
+	float:right;
+	display: inline-block;
+}
+
+.feature-blocks-section {
+	height: 520px;
+}
+
+.feature-block {
+	margin-top: 20px;
+	height: 123px;
+	width:300px;
+}
+
+
+.block-materials {
+	margin-top: 60px;
+	float: left;
+	margin-right: 20px;
+	background-image: url("../img/block-section-materials.png");
+	background-size: cover;
+}
+
+.block-instruments {
+	margin-top: 60px;
+	float: left;
+	margin-right: 20px;
+	background-image: url("../img/block-section-instruments.png");
+	background-size: cover;
+}
+
+.block-technics {
+	margin-top: 60px;
+	float: right;
+	margin-right: 0px;
+	background-image: url("../img/block-section-technics.png");
+	background-size: cover;
+}
+
+.block-perforators {
+	float:left;
+	width: 620px;
+	height: 265px;
+	background-image: url("../img/block-perforators-slider1.png");
+	background-size: cover;
+}
+
+.block-discounts {
+	margin-left: 20px;
+	float: left;
+	background-image: url("../img/block-section-discounts.png");
+	background-size: cover;
+}
+
+.block-delivery {
+	margin-left: 20px;
+	float: left;
+	background-image: url("../img/block-section-delivery.png");
+	background-size: cover;
+}
+
+
+.popular-brands-header h2,
+.popular-items-header h2 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #3d546e;
+	font-family: Cuprum Regular;
+	font-weight: bold;
+}
+
+.catalog-item {
+	text-align:center;
+	vertical-align:center;
+	margin-right:14px;
+	width:220px;
+	height: 318px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid gray;
+	position: relative;
+}
+
+.catalog-item:last-child {
+	float:right;
+	margin-right:0px;
+}
+
+.catalog-item:first-child {
+	margin-left:0px;
+}
+
+.catalog-item-image-wrapper {
+	height:180px;
+	line-height: 180px;
+}
+
+
+.catalog-item img {
+/*	margin-top:20px;*/
+	vertical-align: middle;
+}
+
+
+/*.catalog-item-image-wrapper:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+*/
+
+.catalog-item-price-button a {
+	line-height: 38px;
+	/*vertical-align: middle;*/
+	height: 38px;
+	width: 140px;
+	/*display: inline-block;*/
+	background-image: url("../img/popular-item-button.png");
+	/*margin-bottom: 20px;*/
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+
+
+/*откуда фонт сайз взялся*/
+.about-company-and-contacts {
+	font-size: 0px;
+	margin: 0;
+	padding: 0;
+
+	height:536px;
+}
+
+.about-company {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+	width: 630px;
+	display: inline-block;
+}
+
+.company-contacts {
+	float:right;
+	font-size: 13px;
+		margin: 0;
+	padding: 0;
+	width:310px;
+	display: inline-block;
+}
