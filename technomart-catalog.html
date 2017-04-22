@@ -7,23 +7,25 @@
   </head>
   <body>
     <header class="main-header">
-	  <div class="container">
-	   <div class="header-logo main-header-item">
+      <div class="container">
+        <div class="header-logo main-header-item">
           <a class="technomart-logo" href="#">
             Техномарт
           </a>
-	    </div>
-	    <div class="header-search">
-	    	<a href="#" class="header-search-button">Поиск</a>
-	    </div>
-		<nav class="header-nav">
-			<ul>
-				<li><a class="header-bookmarks" href="#">Закладки</a></li>
-				<li><a class="header-basket" href="#">Корзина</a></li>
-				<li><div class="header-pagination"><a class="header-checkout" href="#">Оформить заказ</a></div></li>
-			</ul>
-		</nav>
-	</header>
+        </div>
+        <form class="header-search main-header-item" method="post" action="#">
+          <input type="search">
+          <!-- <input type="submit" value="Отправить"> -->
+        </form>
+        <section class="header-right main-header-item">
+          <ul>
+            <li><a class="header-pagination" href="#">Закладки</a></li>
+            <li><a class="header-pagination" href="#">Корзина</a></li>
+            <li><div class="header-basket"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
+          </ul>
+        </section>
+        </div>
+    </header>
 	<main class="container">
 	<section class="title-section">
 	  <div class="title-text">
@@ -38,10 +40,10 @@
 	  	</div>
 	  </div>
 	  <div class="title-user-section">
-	    <div class="user-name-line">Равшан Джамшутович</div>
+	    <a class="user-name-line">Равшан Джамшутович</a>
 	  	<a href="#" class="title-user-basket">Мои заказы</a>
 	  	<a href="#" class="title-user-personal-account">Личный кабинет</a>
-	</section>
+	  </div>
 	  <nav class="main-nav">
 			<ul>
 				<li><div class="main-nav-button"><a class="title-navigation" href="#">Главная</a></div></li>
@@ -53,6 +55,8 @@
 				<li><div class="main-nav-button"><a class="title-navigation" href="#">Контакты</a></div></li>
 			</ul>
 	  </nav>
+	</section>
+	  
 	<div class="breadcrumbs">
 	  <a href="#" class="breadcrumbs-home-button">Домой</a>
 	  <a href="#">Каталог</a>
@@ -225,53 +229,55 @@
 		Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 	  </section>
   </main>
-	<footer class="main-footer">
-	  <div class="container">
-	    <content class="footer-top">
-	      <div class="footer-logo">
-	      	<a class="technomart-logo" href="#">
-	    		<img src="img/technomart-logo.png" alt="Техномарт">
-	    	</a>
-	      </div>
-	  </div>
-	  <div class="footer-contacts">
-	  	г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-		+7 (812) 555-05-55
-	  </div>
-	  <nav class="footer-nav">
-			<ul>
-				<li><div class="footer-pagination"><a class="footer-pagination-top" href="#">Компания</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-top" href="#">Новости</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-top" href="#">Каталог</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-top" href="#">Доставка</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-top" href="#">Контакты</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-bottom" href="#">Материалы</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-bottom" href="#">Техника</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-bottom" href="#">Инструмент</a></div></li>
-				<li><div class="footer-pagination"><a class="footer-pagination-bottom" href="#">Спецпредложения</a></div></li>
-			</ul>
-		</nav>
-		</content>
-		<content class="footer-bottom">
-		  <div class="footer-copyright">
-		  	© 2010–2017 Компания «Техномарт»<br>
-			Все права защищены
-		  </div>
-		  <div class="footer-social">
-		  	<a href="#" class="footer-social-vk">Вконтакте</a>
-		  	<a href="#" class="footer-social-facebook">Фейсбук</a>
-		  	<a href="#" class="footer-social-instagram">Инстаграм</a>
-		  </div>
-		  <div class="footer-email-contact">
-		  	Обратная связь:
-			<a href="#">mail@htmlacademy.ru</a>
-		  </div>
-		  <div class="footer-developed">
-		  	Разработано — 
-			<a href="#">htmlacademy.ru</a>
-		  </div>
-		</content>
-	</footer>
+	 <footer class="main-footer container">
+      <section class="footer-top">
+        <div class="main-footer-left">
+        <div class="footer-logo">
+         <a class="technomart-logo" href="#">
+           <img src="img/technomart-logo.png" alt="Техномарт">
+         </a>
+        </div>
+        <div class="footer-contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        +7 (812) 555-05-55
+        </div>
+        </div>
+        <div class="main-footer-right">
+        <div class="footer-nav">
+          <ul>
+            <li><a class="footer-pagination-top" href="#">Компания</a></li>
+            <li><a class="footer-pagination-top" href="#">Новости</a></li>
+            <li><a class="footer-pagination-top" href="#">Каталог</a></li>
+            <li><a class="footer-pagination-top" href="#">Доставка</a></li>
+            <li><a class="footer-pagination-top" href="#">Контакты</a></li>
+            <li><a class="footer-pagination-bottom" href="#">Материалы</a></li>
+            <li><a class="footer-pagination-bottom" href="#">Техника</a></li>
+            <li><a class="footer-pagination-bottom" href="#">Инструмент</a></li>
+            <li><a class="footer-pagination-bottom" href="#">Спецпредложения</a></li>
+          </ul>
+        </div>
+        </div>
+        </section>
+        <section class="footer-bottom">
+          <div class="footer-copyright">
+            © 2010–2017 Компания «Техномарт»<br>
+            Все права защищены
+          </div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-vk">Вконтакте</a>
+            <a href="#" class="footer-social-facebook">Фейсбук</a>
+            <a href="#" class="footer-social-instagram">Инстаграм</a>
+          </div>
+          <div class="footer-email-contact">
+            Обратная связь:
+            <a href="#">mail@htmlacademy.ru</a>
+          </div>
+          <div class="footer-developed">
+            Разработано — 
+            <a href="#">htmlacademy.ru</a>
+          </div>
+        </section>
+    </footer>
   </body>
 </html>
 
