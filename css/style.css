@@ -12,6 +12,7 @@ body {
 }
 
 .main-header {
+	overflow: hidden;
 	background-image: url("../img/header-background.png");
 	background-color: #33445a;
 	height:42px;
@@ -62,6 +63,7 @@ body {
 	display: inline-block;
 }
 
+/*кнопки в шапке поправить не лезут*/
 .header-right {
 	margin:0;
 	padding: 0;
@@ -77,7 +79,6 @@ body {
 	margin-left:0;
 	margin-right: 0px;
 	padding: 0px;
-	border: 2px solid green;
 	width:150px;
 	display: inline-block;
 
@@ -89,23 +90,26 @@ body {
 }
 
 .title-text {
-	margin:0;
+	margin-top:50px;
 	padding: 0;
 	height: 76px;
 	float:left;
 	width: 300px;
-	border: 2px solid green;
+}
+
+.title-text p {
+	font-size: 16px;
+	font-style:italic;
+	color:red;
 }
 
 .title-contacts {
+	margin-top:50px;
+	border:1px solid green;
 	float:left;
 	width: 300px;
 	height: 70px;
 }
-
-/*
-
-
 
 
 .title-user-section {
@@ -134,19 +138,46 @@ body {
 }
 
 
-
+/*как сделать отступ*/
 .main-nav {
+	text-align: center;
 	clear:both;
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 940px;
 	height:60px;
 	background-color: #32425c;
+	line-height: 60px;
 }
-*/
+
+.main-nav li {
+
+	vertical-align: middle;
+	color:white;
+	display: inline-block;
+}
+
+.main-nav a {
+	color:white;
+}
 
 .breadcrumbs {
 	height:60px;
 }
+
+/*почему стандартно в него заходят другие блоки?*/
+.catalog-item-type {
+	height: 90px;
+}
+
+.filter-list {
+	float:left;
+	height: 750px;
+	width: 220px;
+}
+/*700-1150*/
+
+
+
 .feature-blocks-section {
 	height: 520px;
 }
@@ -222,7 +253,15 @@ body {
 	font-size:0;
 }
 
+.catalog-items {
+	float:right;
+	width: 700px;
+	height: 1150px;
+	font-size:0;
+}
+
 .catalog-item {
+	margin-bottom: 20px;
 	font-size:12px;
 	text-align:center;
 	margin-right:20px;
@@ -235,6 +274,11 @@ body {
 }
 
 .catalog-item:last-child {
+	float:right;
+	margin-right:0px;
+}
+
+.catalog-item:nth-child(3n) {
 	float:right;
 	margin-right:0px;
 }
@@ -352,14 +396,19 @@ body {
 }
 
 .footer-top {
+	line-height: 194px;
+	overflow: hidden;
 	margin:0;
 	padding: 0;
-	font-size: 0;
+	/*font-size: 0;*/
 	height: 194px;
 	background-color: #3d546e;
 }
 
+
+
 .main-footer-left {
+	vertical-align: top;
 	margin:0;
 	padding: 0;
 	font-size: 18px;
@@ -385,19 +434,29 @@ body {
 	width:220px;
 }
 
-
+/*как позиционировать без флоатов по верхней части?*/
 .main-footer-right {
+	float:right;
+	vertical-align: top;
 	font-size: 18px;
-	margin:0;
+	margin-left:10px;
 	padding:0;
 	display: inline-block;
 	width: 550px;
 	height: 182px;
 }
 
+.about-perforators {
+	clear: both;
+	height: 260px;
+	background-color: #f2f6f8;
+
+}
+
 /* почему footer-nav не переносится вправо внутри
 футера?*/
 .footer-contacts {
+	font-size: 18px;
 	border: 1px solid green;
 	display: inline-block;
 	color:white;
