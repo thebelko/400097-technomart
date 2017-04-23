@@ -1,0 +1,482 @@
+body {
+	font-size: 13px;
+	line-height: 12px;
+	color: #000000;
+	font-family: Myriad Pro, "Arial", sans-serif;
+	font-weight: regular;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.main-header {
+	overflow: hidden;
+	background-image: url("../img/header-background.png");
+	background-color: #33445a;
+	height:42px;
+	line-height: 42px;
+}
+
+
+/* va не работает без lh*/
+.main-header-item {
+	line-height: 42px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.header-logo {
+	float: left;
+	text-align:center;
+	width:220px;
+	height: 47px;
+	background-image: url("../img/header-logo-button.jpg");
+}
+
+.header-logo a {
+	width:110px;
+	height: 47px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-align:center;
+	background-size: cover;
+	font-size: 24px;
+	line-height: 24px;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-weight: regular;
+	text-decoration: none;
+}
+
+.header-pagination {
+
+}
+
+.header-search {
+	width: 100px;
+	vertical-align: top;
+	line-height: 42px;
+	margin-left:17px;
+	float:left;
+	display: inline-block;
+}
+
+/*кнопки в шапке поправить не лезут*/
+.header-right {
+	margin:0;
+	padding: 0;
+	height:42px;
+	text-align:right;
+/*	border: 2px solid green;*/
+	width: 510px;
+	float:right;
+}
+
+.header-right li {
+
+	margin-left:0;
+	margin-right: 0px;
+	padding: 0px;
+	width:150px;
+	display: inline-block;
+
+}
+
+.title-section {
+	background-color: #f2f6f8;
+	min-height: 278px;
+}
+
+.title-text {
+	margin-top:50px;
+	padding: 0;
+	height: 76px;
+	float:left;
+	width: 300px;
+}
+
+.title-text p {
+	font-size: 16px;
+	font-style:italic;
+	color:red;
+}
+
+.title-contacts {
+	margin-top:50px;
+	border:1px solid green;
+	float:left;
+	width: 300px;
+	height: 70px;
+}
+
+
+.title-user-section {
+	float:right;
+	margin-top: 45px;
+	width:300px;
+	height:76px;
+	border: 1px solid black;
+}
+
+.title-user-section .user-name-line {
+	box-sizing: border-box;
+	padding-top: 15px;
+	padding-left: 15px;
+	border:1px solid black;
+	background-color: white;
+	height: 45px;
+	display: block;
+}
+
+.title-user-section a {
+	display: inline-block;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+/*как сделать отступ*/
+.main-nav {
+	text-align: center;
+	clear:both;
+	margin-top: 30px;
+	width: 940px;
+	height:60px;
+	background-color: #32425c;
+	line-height: 60px;
+}
+
+.main-nav li {
+
+	vertical-align: middle;
+	color:white;
+	display: inline-block;
+}
+
+.main-nav a {
+	color:white;
+}
+
+.breadcrumbs {
+	height:60px;
+}
+
+/*почему стандартно в него заходят другие блоки?*/
+.catalog-item-type {
+	height: 90px;
+}
+
+.filter-list {
+	float:left;
+	height: 750px;
+	width: 220px;
+}
+/*700-1150*/
+
+
+
+.feature-blocks-section {
+	height: 520px;
+}
+
+.feature-block {
+	margin-top: 20px;
+	height: 123px;
+	width:300px;
+}
+
+
+.block-materials {
+	margin-top: 60px;
+	float: left;
+	margin-right: 20px;
+	background-image: url("../img/block-section-materials.png");
+	background-size: cover;
+}
+
+.block-instruments {
+	margin-top: 60px;
+	float: left;
+	margin-right: 20px;
+	background-image: url("../img/block-section-instruments.png");
+	background-size: cover;
+}
+
+.block-technics {
+	margin-top: 60px;
+	float: right;
+	margin-right: 0px;
+	background-image: url("../img/block-section-technics.png");
+	background-size: cover;
+}
+
+.block-perforators {
+	float:left;
+	width: 620px;
+	height: 265px;
+	background-image: url("../img/block-perforators-slider1.png");
+	background-size: cover;
+}
+
+.block-discounts {
+	margin-left: 20px;
+	float: left;
+	background-image: url("../img/block-section-discounts.png");
+	background-size: cover;
+}
+
+.block-delivery {
+	margin-left: 20px;
+	float: left;
+	background-image: url("../img/block-section-delivery.png");
+	background-size: cover;
+}
+
+.popular-section {
+	height:450px;
+}
+
+.popular-brands-header h2,
+.popular-items-header h2 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #3d546e;
+	font-family: Cuprum Regular;
+	font-weight: bold;
+}
+
+.popular-items-wrapper {
+	height:360px;
+	font-size:0;
+}
+
+.catalog-items {
+	float:right;
+	width: 700px;
+	height: 1150px;
+	font-size:0;
+}
+
+.catalog-item {
+	margin-bottom: 20px;
+	font-size:12px;
+	text-align:center;
+	margin-right:20px;
+	width:218px;
+	height: 318px;
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid gray;
+	position: relative;
+}
+
+.catalog-item:last-child {
+	float:right;
+	margin-right:0px;
+}
+
+.catalog-item:nth-child(3n) {
+	float:right;
+	margin-right:0px;
+}
+
+.catalog-item:first-child {
+	margin-left:0px;
+}
+
+.catalog-item-image-wrapper {
+	height:180px;
+	line-height: 180px;
+}
+
+
+.catalog-item img {
+/*	margin-top:20px;*/
+	vertical-align: middle;
+}
+
+
+/*.catalog-item-image-wrapper:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+*/
+
+.catalog-item-price-button a {
+	line-height: 38px;
+	/*vertical-align: middle;*/
+	height: 38px;
+	width: 140px;
+	/*display: inline-block;*/
+	background-image: url("../img/popular-item-button.png");
+	/*margin-bottom: 20px;*/
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+
+
+.popular-section {
+	font-size: 0;
+}
+
+.popular-section a {
+	font-size: 12px;
+}
+/*.popular-brands {
+	height: 505px;
+}*/
+
+.popular-brand {
+	margin-left: 0px;
+	margin-right:20px;
+	margin-bottom: 20px;
+	width:218px;
+	text-align: center;
+	vertical-align: top;
+	display: inline-block;
+	border: 1px solid gray;
+	height:143px;
+	line-height: 143px;
+}
+
+
+.popular-brand:nth-child(4),
+.popular-brand:nth-child(8) {
+	float:right;
+	margin-right:0px;
+}
+
+.popular-brand img {
+	vertical-align: middle;
+}
+
+
+.company-features {
+	background-color: #f4f8fa;
+	min-height: 522px;
+}
+
+
+
+.about-company-and-contacts {
+	font-size: 0px;
+	margin: 0;
+	padding: 0;
+	height:536px;
+
+}
+
+.about-company-and-contacts .about-company {	
+	height: 400px;
+	font-size: 13px;
+	margin: 0;
+	margin-top: 85px;
+	padding: 0;
+	width: 630px;
+	display: inline-block;
+}
+
+.company-contacts {
+	height:400px;
+	float:right;
+	font-size: 13px;
+	margin: 0;
+	margin-top: 85px;
+	padding: 0;
+	width:310px;
+	display: inline-block;
+}
+
+.footer-top {
+	line-height: 194px;
+	overflow: hidden;
+	margin:0;
+	padding: 0;
+	/*font-size: 0;*/
+	height: 194px;
+	background-color: #3d546e;
+}
+
+
+
+.main-footer-left {
+	vertical-align: top;
+	margin:0;
+	padding: 0;
+	font-size: 18px;
+	display: inline-block;
+	border: 1px solid white;
+	width: 355px;
+	height: 150px;
+	margin-right:0;
+}
+
+.footer-logo {
+	display: inline-block;
+	line-height: 68px;
+}
+.footer-logo a {
+	margin:0;
+	padding: 0;
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	background-color: red;
+	height: 68px;
+	width:220px;
+}
+
+/*как позиционировать без флоатов по верхней части?*/
+.main-footer-right {
+	float:right;
+	vertical-align: top;
+	font-size: 18px;
+	margin-left:10px;
+	padding:0;
+	display: inline-block;
+	width: 550px;
+	height: 182px;
+}
+
+.about-perforators {
+	clear: both;
+	height: 260px;
+	background-color: #f2f6f8;
+
+}
+
+/* почему footer-nav не переносится вправо внутри
+футера?*/
+.footer-contacts {
+	font-size: 18px;
+	border: 1px solid green;
+	display: inline-block;
+	color:white;
+	min-height: 50px;
+/*	margin-top: 28px;*/
+}
+
+.footer-nav {
+	float:right;
+	width: 550px;
+	min-height: 90px;
+	border: 1px solid white;
+	margin-top: 40px;
+}
+
+.footer-pagination-top {
+	display: inline-block;
+}
+
+.footer-bottom {
+	background-color: #33445a;
+	height:107px;
+}
