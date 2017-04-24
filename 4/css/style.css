@@ -11,18 +11,23 @@ body {
 	margin: 0 auto;
 }
 
+.cleafrix {
+	content: "";
+	display: table;
+	clear:both;
+}
+
+
 .main-header {
 	overflow: hidden;
 	background-image: url("../img/header-background.png");
 	background-color: #33445a;
 	height:42px;
-	line-height: 42px;
 }
 
 
 /* va не работает без lh*/
 .main-header-item {
-	line-height: 42px;
 	vertical-align: middle;
 	display: inline-block;
 }
@@ -51,6 +56,7 @@ body {
 }
 
 .header-pagination {
+	color: #ffffff;
 
 }
 
@@ -61,6 +67,10 @@ body {
 	margin-left:17px;
 	float:left;
 	display: inline-block;
+}
+
+.header-search input {
+	width: 100%;
 }
 
 /*кнопки в шапке поправить не лезут*/
@@ -89,6 +99,10 @@ body {
 	min-height: 278px;
 }
 
+.title-section-top {
+	min-height: 120px;
+}
+
 .title-text {
 	margin-top:50px;
 	padding: 0;
@@ -104,11 +118,25 @@ body {
 }
 
 .title-contacts {
+	text-align: center;
 	margin-top:50px;
-	border:1px solid green;
+	padding-top: 20px;
 	float:left;
 	width: 300px;
 	height: 70px;
+}
+
+.title-user-buttons {
+	float:right;
+	margin-top:50px;
+	width: 300px;
+	height: 44px;
+	text-align: center;
+}
+
+.title-button {
+	display: inline-block;
+	margin-top: 11px;
 }
 
 
@@ -217,7 +245,7 @@ body {
 	float:left;
 	width: 620px;
 	height: 265px;
-	background-image: url("../img/block-perforators-slider1.png");
+	background-image: url("../img/block-perforators-slider1.jpg");
 	background-size: cover;
 }
 
@@ -266,14 +294,22 @@ body {
 	text-align:center;
 	margin-right:20px;
 	width:218px;
-	height: 318px;
+	min-height: 318px;
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid gray;
 	position: relative;
 }
 
-.catalog-item:last-child {
+.popular-items-wrapper .catalog-item:nth-child(4n) {
+	margin-right:0px;
+}
+
+.catalog-items .catalog-item:nth-child(3n) {
+	margin-right:0px;
+}
+
+/*.catalog-item:last-child {
 	float:right;
 	margin-right:0px;
 }
@@ -286,7 +322,7 @@ body {
 .catalog-item:first-child {
 	margin-left:0px;
 }
-
+*/
 .catalog-item-image-wrapper {
 	height:180px;
 	line-height: 180px;
@@ -368,7 +404,6 @@ body {
 
 .about-company-and-contacts {
 	font-size: 0px;
-	margin: 0;
 	padding: 0;
 	height:536px;
 
@@ -396,9 +431,6 @@ body {
 }
 
 .footer-top {
-	line-height: 194px;
-	overflow: hidden;
-	margin:0;
 	padding: 0;
 	/*font-size: 0;*/
 	height: 194px;
@@ -413,7 +445,6 @@ body {
 	padding: 0;
 	font-size: 18px;
 	display: inline-block;
-	border: 1px solid white;
 	width: 355px;
 	height: 150px;
 	margin-right:0;
@@ -461,15 +492,32 @@ body {
 	display: inline-block;
 	color:white;
 	min-height: 50px;
-/*	margin-top: 28px;*/
+	margin-top: 30px;
 }
 
 .footer-nav {
 	float:right;
 	width: 550px;
 	min-height: 90px;
-	border: 1px solid white;
+}
+
+.footer-nav-top {
 	margin-top: 40px;
+	padding-bottom: 40px;
+	width: 560px;
+	min-height: 20px;
+	margin-bottom: 0;
+}
+
+.footer-nav li {
+	display: inline-block;
+	margin-top: 0;
+}
+
+.footer-nav-bottom {
+	margin-top: 0;
+	width: 560px;
+	min-height: 75px;
 }
 
 .footer-pagination-top {
@@ -479,4 +527,37 @@ body {
 .footer-bottom {
 	background-color: #33445a;
 	height:107px;
+}
+
+.footer-copyright {
+	margin-top: 38px;
+	margin-right: 140px;
+	float: left;
+	min-height: 40px;
+	width: 230px;
+}
+
+.footer-social {
+	margin-top: 34px;
+	margin-right: 90px;
+	float: left;
+	min-height: 45px;
+	width: 150px;
+
+}
+
+.footer-email-contact {
+	margin-top: 38px;
+	float: left;
+	min-height: 40px;
+	width: 150px;
+
+}
+
+.footer-developed {
+	margin-top: 38px;
+	margin-right: 10px;
+	float: left;
+	min-height: 40px;
+	width: 150px;
 }
