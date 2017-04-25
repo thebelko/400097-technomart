@@ -11,10 +11,10 @@ body {
 	margin: 0 auto;
 }
 
-.cleafrix {
-	content: "";
-	display: table;
-	clear:both;
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
 }
 
 
@@ -202,7 +202,14 @@ body {
 	height: 750px;
 	width: 220px;
 }
-/*700-1150*/
+
+.filter-brand label {
+	display: block;
+}
+
+.filter-type label {
+	display: block;
+}
 
 
 
@@ -298,7 +305,7 @@ body {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid gray;
-	position: relative;
+	/*position: relative;*/
 }
 
 .popular-items-wrapper .catalog-item:nth-child(4n) {
@@ -343,21 +350,48 @@ body {
 }
 */
 
-.catalog-item-price-button a {
-	line-height: 38px;
-	/*vertical-align: middle;*/
-	height: 38px;
-	width: 140px;
-	/*display: inline-block;*/
-	background-image: url("../img/popular-item-button.png");
-	/*margin-bottom: 20px;*/
-	position: absolute;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-	bottom: 20px;
+.catalog-item .catalog-item-active {
+	
 }
 
+.catalog-item-buy-button {
+	display: block;
+	margin-top: 45px;
+}
+
+.catalog-item-bookmarks-button {
+	display: block;
+	margin-top: 45px;
+	padding-bottom: 66px;
+}
+
+.catalog-item-title {
+	font-size:12px;
+}
+
+.catalog-item-old-price {
+	padding-top:15px;
+	width:218px;
+	float:left;
+}
+
+.catalog-item-price-button {
+	margin-top:45px;
+	height: 38px;
+	line-height: 38px;
+}
+
+.catalog-item-price-button a {
+	height: 100%;
+	width: 140px;
+	font-size:12px;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #ff5357;
+	margin: 0 auto;
+}
 
 .popular-section {
 	font-size: 0;
@@ -386,12 +420,23 @@ body {
 
 .popular-brand:nth-child(4),
 .popular-brand:nth-child(8) {
-	float:right;
+	float:left;
 	margin-right:0px;
 }
 
 .popular-brand img {
 	vertical-align: middle;
+}
+
+.catalog-pagination {
+	font-size: 12px;
+	min-height: 30px;
+	wiidth: 30px;
+}
+
+.catalog-pagination-button {
+	min-height: 30px;
+	wiidth: 30px;
 }
 
 
@@ -400,6 +445,34 @@ body {
 	min-height: 522px;
 }
 
+.company-service {
+	padding-top: 62px;
+	min-height: 107px;
+	width: 400px;
+}
+
+.company-service-feature-list {
+	display: inline-block;
+	padding-top: 70px;
+	line-height: 60px;
+	height: 180px;
+}
+
+.company-feature {
+	vertical-align: middle;
+	padding-left: 80px;
+	display: inline-block;
+	width: 300px;
+	min-height: 175px;
+}
+
+.feature-guarantee {
+	display: none;
+}
+
+.feature-credit {
+	display: none;
+}
 
 
 .about-company-and-contacts {
@@ -492,7 +565,8 @@ body {
 	display: inline-block;
 	color:white;
 	min-height: 50px;
-	margin-top: 30px;
+	line-height: 24px;
+	margin-top: 22px;
 }
 
 .footer-nav {
