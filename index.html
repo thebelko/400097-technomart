@@ -15,7 +15,7 @@
         </div>
         <form class="header-search main-header-item" method="post" action="#">
           <input type="search">
-          <input type="submit" value="Отправить">
+          <!-- <input type="submit" value="Отправить"> -->
         </form>
         <section class="header-right main-header-item">
           <ul>
@@ -26,8 +26,10 @@
         </section>
         </div>
     </header>
-    <main class="container">
+    <main>
     <section class="title-section">
+     <div class="container">
+      <div class="title-section-top clearfix">
       <div class="title-text">
         <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       </div>
@@ -43,7 +45,7 @@
         <div class="title-button login-button"><a href="#" class="title-button login-button">Войти</a></div>
         <div class="title-button registration-button"><a href="#" class="title-button registration-button">Регистрация</a></div>
       </div>
-    </section>
+      </div>
       <nav class="main-nav">
         <ul>
           <li class="main-nav-button"><a class="title-navigation" href="#">Главная</a></li>
@@ -55,7 +57,9 @@
           <li class="main-nav-button"><a class="title-navigation" href="#">Контакты</a></li>
         </ul>
       </nav>
-    <section class="feature-blocks-section">
+     </div>
+    </section>  
+    <section class="feature-blocks-section container">
         <div class="block-materials feature-block">
           <p>Материалы</p>
           <div class="block-material-button">
@@ -96,12 +100,13 @@
           </div>
         </div>
     </section>
-    <section class="popular-section">
+    <section class="popular-section container">
       <div class="popular-items-header">
         <h2>Популярные товары</h2>
         <a href="#" class="popular-items-header-button">Все популярные товары</a>
       </div>
-      <div class="catalog-item">
+      <div class="popular-items-wrapper">
+       <div class="catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/BFG-9000.jpg" alt="Перфоратор">
         </div>
@@ -115,8 +120,8 @@
         <div class="catalog-item-price-button">
             <a href="#">22500 Р.</a>
         </div>      
-      </div>
-      <div class="catalog-item">
+       </div>
+       <div class="catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-3000.jpg" alt="Перфоратор">
         </div>
@@ -130,8 +135,8 @@
         <div class="catalog-item-price-button">
             <a href="#" class="catalog-item-price-button">15500 Р.</a>
         </div>      
-      </div>
-      <div class="catalog-item">
+       </div>
+       <div class="catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-6000.jpg" alt="Перфоратор">
         </div>
@@ -145,8 +150,8 @@
         <div class="catalog-item-price-button">
             <a href="#" class="catalog-item-price-button">25500 Р.</a>
         </div>      
-      </div>
-      <div class="catalog-item">
+       </div>
+       <div class="catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-2000.jpg" alt="Перфоратор">
         </div>
@@ -160,9 +165,10 @@
         <div class="catalog-item-price-button">
             <a href="#" class="catalog-item-price-button">12500 Р.</a>
         </div>      
+       </div>
       </div>
     </section>
-    <section class="popular-section">
+    <section class="popular-section container">
       <div class="popular-brands-header">
         <h2>Популярные производители</h2>
         <a href="#" class="popular-brands-header-button">Все производители</a>
@@ -193,6 +199,7 @@
       </div>
     </section>
     <section class="company-features">
+     <div class="container">
       <div class="company-service">
         <h3 class="company-service-title">Сервисы</h3>
         <div class="company-service-description">
@@ -207,7 +214,7 @@
             <li>Кредит</li>
         </ul>
       </div>
-      <div class="company-feature">
+      <div class="company-feature feature-delivery">
         <h3 class="company-feature-title">Доставка</h3>
         <div class="company-feature-description">
           Мы с удовольствием доставим ваш товар прямо 
@@ -215,14 +222,14 @@
           Ведь мы неплохо заработаем.           
         </div>
       </div>
-      <div class="company-feature">
+      <div class="company-feature feature-guarantee">
         <h3 class="company-feature-title">Гарантия</h3>
         <div class="company-feature-description">
           Если купленный у нас товар поломается или заискрит, 
           а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
         </div>
       </div>
-      <div class="company-feature">
+      <div class="company-feature feature-credit">
         <h3 class="company-feature-title">Кредит</h3>
         <div class="company-feature-description">
           Залезть в долговую яму стало проще! 
@@ -230,9 +237,10 @@
           <a href="#" class="company-feature-button">Отправить заявку</a>           
         </div>
       </div>
+     </div>
     </section>
-    <section class="about-company-and-contacts">
-      <div class="about-company">
+    <section class="about-company-and-contacts container">
+      <div class="about-company">       
         <p>КОМПАНИЯ «Техномарт»</p>
         <div class="about-company-description">
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -263,8 +271,10 @@
       </div>
     </section>
   </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
       <section class="footer-top">
+       <div class="container">
+        <div class="main-footer-left">
         <div class="footer-logo">
          <a class="technomart-logo" href="#">
            <img src="img/technomart-logo.png" alt="Техномарт">
@@ -274,21 +284,28 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55
         </div>
+        </div>
+        <div class="main-footer-right">
         <div class="footer-nav">
-          <ul>
+          <ul class="footer-nav-top">
             <li><a class="footer-pagination-top" href="#">Компания</a></li>
             <li><a class="footer-pagination-top" href="#">Новости</a></li>
             <li><a class="footer-pagination-top" href="#">Каталог</a></li>
             <li><a class="footer-pagination-top" href="#">Доставка</a></li>
             <li><a class="footer-pagination-top" href="#">Контакты</a></li>
+            </ul>
+            <ul class="footer-nav-bottom">
             <li><a class="footer-pagination-bottom" href="#">Материалы</a></li>
             <li><a class="footer-pagination-bottom" href="#">Техника</a></li>
             <li><a class="footer-pagination-bottom" href="#">Инструмент</a></li>
             <li><a class="footer-pagination-bottom" href="#">Спецпредложения</a></li>
-          </ul>
+            </ul>          
         </div>
-        </section>
-        <section class="footer-bottom">
+        </div>
+       </div>
+      </section>
+      <section class="footer-bottom">
+       <div class="container clearfix">
           <div class="footer-copyright">
             © 2010–2017 Компания «Техномарт»<br>
             Все права защищены
@@ -306,6 +323,7 @@
             Разработано — 
             <a href="#">htmlacademy.ru</a>
           </div>
+         </div>
         </section>
     </footer>
   </body>
