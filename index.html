@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,9 +22,9 @@
         </form>
         <section class="header-right main-header-item">
           <ul>
-            <li><a class="header-pagination" href="#">Закладки</a></li>
-            <li><a class="header-pagination" href="#">Корзина</a></li>
-            <li><div class="header-basket"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
+            <li class="header-bookmarks"><a class="header-pagination" href="#">Закладки</a></li>
+            <li><a class="header-pagination header-basket" href="#">Корзина: 0</a></li>
+            <li><div class="header-checkout"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
           </ul>
         </section>
         </div>
@@ -35,14 +38,14 @@
       </div>
       <div class="title-contacts">
         <div class="title-number">
-          +7 (812) 555-05-55
+          <p>+7 (812) 555-05-55</p>
         </div>
         <div class="title-adress">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
       </div>
       <div class="title-user-buttons">
-        <div class="title-button login-button"><a href="#" class="title-button login-button">Войти</a></div>
+        <div class="title-button login-button"><a href="#" class="title-button login-button"><p>Войти</p></a></div>
         <div class="title-button registration-button"><a href="#" class="title-button registration-button">Регистрация</a></div>
       </div>
       </div>
@@ -103,7 +106,9 @@
     <section class="popular-section container">
       <div class="popular-items-header">
         <h2>Популярные товары</h2>
-        <a href="#" class="popular-items-header-button">Все популярные товары</a>
+          <div class="popular-items-header-button">
+            <a href="#">Все популярные товары</a>
+          </div>
       </div>
       <div class="popular-items-wrapper">
        <div class="catalog-item">
@@ -171,7 +176,9 @@
     <section class="popular-section container">
       <div class="popular-brands-header">
         <h2>Популярные производители</h2>
-        <a href="#" class="popular-brands-header-button">Все производители</a>
+        <div class="popular-brands-header-button">
+          <a href="#">Все производители</a>
+        </div>
       </div>
       <div class="popular-brand">
         <img src="img/logo-bosch.jpg" alt="Логотип производителя">
@@ -209,12 +216,12 @@
       </div>
       <div class="company-service-feature-list">
         <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li class="unactive-feature-list">Доставка</li>
+            <li class="unactive-feature-list">Гарантия</li>
+            <li class="active-feature-list">Кредит</li>
         </ul>
       </div>
-      <div class="company-feature feature-delivery">
+      <div class="feature-delivery">
         <h3 class="company-feature-title">Доставка</h3>
         <div class="company-feature-description">
           Мы с удовольствием доставим ваш товар прямо 
@@ -222,14 +229,14 @@
           Ведь мы неплохо заработаем.           
         </div>
       </div>
-      <div class="company-feature feature-guarantee">
+      <div class="feature-guarantee">
         <h3 class="company-feature-title">Гарантия</h3>
         <div class="company-feature-description">
           Если купленный у нас товар поломается или заискрит, 
           а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
         </div>
       </div>
-      <div class="company-feature feature-credit">
+      <div class="feature-credit">
         <h3 class="company-feature-title">Кредит</h3>
         <div class="company-feature-description">
           Залезть в долговую яму стало проще! 
@@ -277,7 +284,7 @@
         <div class="main-footer-left">
         <div class="footer-logo">
          <a class="technomart-logo" href="#">
-           <img src="img/technomart-logo.png" alt="Техномарт">
+           Техномарт
          </a>
         </div>
         <div class="footer-contacts">
@@ -305,15 +312,15 @@
        </div>
       </section>
       <section class="footer-bottom">
-       <div class="container clearfix">
+       <div class="container">
           <div class="footer-copyright">
             © 2010–2017 Компания «Техномарт»<br>
             Все права защищены
           </div>
           <div class="footer-social">
-            <a href="#" class="footer-social-vk">Вконтакте</a>
-            <a href="#" class="footer-social-facebook">Фейсбук</a>
-            <a href="#" class="footer-social-instagram">Инстаграм</a>
+            <a href="#" class="footer-social-vk"></a>
+            <a href="#" class="footer-social-facebook"></a>
+            <a href="#" class="footer-social-instagram"></a>
           </div>
           <div class="footer-email-contact">
             Обратная связь:
