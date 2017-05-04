@@ -42,6 +42,7 @@ body {
 }
 
 .header-logo a {
+	text-transform: uppercase;
 	background-color: #ff5357;
 	height: 42px;
 	border-bottom: 5px solid #c23f42; 
@@ -93,7 +94,7 @@ body {
 }
 
 .header-right li {
-	text-align: center;
+	text-align: right;
 	margin: 0;
 	margin-left:10px;
 	margin-right: 0px;
@@ -103,7 +104,10 @@ body {
 }
 
 .header-bookmarks {
-	position: relative;
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: inherit;
+  position: relative;
 }
 
 .header-bookmarks::after {
@@ -115,6 +119,8 @@ body {
 
 .header-basket {
 	position: relative;
+	box-sizing: border-box;
+    margin-right: 15px;
 }
 
 .header-basket::after {
@@ -126,7 +132,6 @@ body {
 
 
 .header-checkout {
-	margin:0;
 	padding: 0;
 	background-color: #6db254;
 	height: 42px;
@@ -205,7 +210,7 @@ body {
 
 .title-user-buttons {
 	float:right;
-	margin-top:50px;
+	margin-top:34px;
 	width: 300px;
 	height: 44px;
 	text-align: center;
@@ -255,14 +260,14 @@ body {
 	margin-top: 45px;
 	width:300px;
 	height:76px;
-	border: 1px solid black;
 }
 
 .title-user-section .user-name-line {
+	font-family: "Cuprum", sans-serif;
+	font-size: 21px;
 	box-sizing: border-box;
 	padding-top: 15px;
-	padding-left: 15px;
-	border:1px solid black;
+	padding-left: 47px;
 	background-color: white;
 	height: 45px;
 	display: block;
@@ -272,7 +277,11 @@ body {
 	display: inline-block;
 	box-sizing: border-box;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 21px;
+	font-size: 16px;
+	margin-right: 5px;
+	font-family: "Cuprum", sans-serif;
+	color: #32425c;
 }
 
 
@@ -298,7 +307,8 @@ body {
 }
 
 .main-nav a {
-	margin-right: 50px;
+	text-decoration: none;
+	margin-right: 58px;
 	color:white;
 }
 
@@ -328,18 +338,168 @@ body {
 	left:-25px;
 }
 
-/*почему стандартно в него заходят другие блоки?*/
-.catalog-item-type {
-	height: 90px;
+.catalog-item-type p {
+    font-size: 30px;
+    font-family: "Cuprum";
+    color: 32425c;
+    text-transform: uppercase;
+ 	padding: 0;
+	margin:0;
 }
+
+.catalog-item-type {
+	box-sizing: border-box;
+	background-color: #f2f6f8;
+	height: 90px;
+	padding-left: 28px;
+	padding-top: 33px;
+}
+
+.price-filter {
+	height: 205px;
+	width: 220px;
+	display: inline-block;
+	border-bottom:1px solid #e5e5e5;
+}
+
 
 .filter-list {
 	float:left;
 	height: 750px;
 	width: 220px;
+	margin-right: 20px;
 }
-/*700-1150*/
 
+.filter-list-title {
+	box-sizing: border-box;
+	text-transform: uppercase;
+    font-size: 13px;
+    font-family: "PT Sans";
+	height: 38px;
+	margin-top: 20px;
+	padding-left: 19px;
+	padding-top: 10px;
+	background-color: #f7f3ec;
+}
+
+.filter-list p {
+	margin:0;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	font-size: 17px;
+    font-family: "PT Sans";
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+} 
+
+.filter-brand p {
+	font-size: 15px;
+	line-height: 13px;
+}
+
+.filter-brand input {
+	margin-right: 9px;
+}
+
+.filter-brand {
+	margin-bottom: 20px;
+	border-bottom:1px solid #e5e5e5;
+}
+
+.filter-type p {
+	font-size: 15px;
+	line-height: 13px;
+}
+
+.filter-type input {
+	margin-right: 9px;
+}
+
+.filter-type {
+	margin-bottom: 70px;
+}
+
+.catalog-content-page {
+    width: 700px;
+    display: inline-block;
+}
+
+.catalog-sorting-title {
+	display: inline-block;
+	width: 700px;
+	height: 38px;
+	background-color: #f7f3ec;
+	margin-top: 20px;
+}
+
+.catalog-sorting-title a {
+	display: inline-block;
+	margin-right: 68px;
+	text-transform: uppercase;
+	text-decoration: none;
+  color:black;
+  font-size: 13px;
+  font-family: "PT Sans";
+  opacity: 0.3;
+}
+
+
+.catalog-sorting-title p {
+	margin: 0;
+	margin-right: 138px;
+	padding-left: 19px;
+    padding-top: 10px;
+	display: inline-block;	
+	box-sizing: border-box;
+	text-transform: uppercase;
+    font-size: 13px;
+    font-family: "PT Sans";
+}
+
+.catalog-sorting-title .catalog-sorting-by-price {
+	color:#ee3643;
+	opacity: 1;
+}
+
+.catalog-sorting-title .catalog-sorting-by-functional {
+	margin-right: 36px;
+}
+
+.catalog-sorting-title .catalog-title-button {
+	opacity: 1;
+	margin-right:14px;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+}
+
+.catalog-pagination a {
+	color: black;
+	text-decoration: none;
+	min-width: 38px;
+	height: 38px;
+	border:2px solid #f7f3ec;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 12px;
+    font-size: 13px;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 9px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin-top: 24px;
+    margin-bottom: 58px;
+    margin-right: 10px;
+}
+
+.catalog-pagination .pagination-active {
+	background-color: #ee3643;
+	color: white;
+}
 
 
 .feature-blocks-section {
@@ -459,7 +619,7 @@ body {
 	background-size: cover;
 }
 
-.block-perforators-header {
+.block-perforators .block-perforators-header {
   font-size: 36px;
   line-height: 30px;
   font-family: "Cuprum";
@@ -595,11 +755,13 @@ body {
 .catalog-items {
 	float:left;
 	width: 700px;
-	height: 1150px;
+	height: 1143px;
+	margin-top: 20px;
 	font-size:0;
 }
 
 .catalog-item {
+	box-sizing: border-box;
 	margin-bottom: 20px;
 	font-size:12px;
 	text-align:center;
@@ -620,20 +782,6 @@ body {
 	margin-right:0px;
 }
 
-/*.catalog-item:last-child {
-	float:right;
-	margin-right:0px;
-}
-
-.catalog-item:nth-child(3n) {
-	float:right;
-	margin-right:0px;
-}
-
-.catalog-item:first-child {
-	margin-left:0px;
-}
-*/
 .catalog-item-image-wrapper {
 	height:180px;
 	line-height: 180px;
@@ -641,36 +789,82 @@ body {
 
 
 .catalog-item img {
-/*	margin-top:20px;*/
 	vertical-align: middle;
 }
 
 
 .catalog-item-title {
-	font-family: 'PT Sans', sans-serif;	
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+
 }
 
-/*.catalog-item-image-wrapper:before {
-  content: '';
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
+.catalog-item .catalog-item-old-price {
+	text-decoration: line-through;
+	padding-left: 85px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color:#999999;
+	float:left;
+
 }
-*/
+
 
 .catalog-item-price-button a {
 	line-height: 38px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+	text-decoration: none;
 	/*vertical-align: middle;*/
 	height: 38px;
 	width: 140px;
-	/*display: inline-block;*/
+	display:block;
 	background-image: url("../img/popular-item-button.png");
-	/*margin-bottom: 20px;*/
-	position: absolute;
+	margin-top: 44px;
+	margin-left: 45px;
+	/*position: absolute;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	bottom: 20px;
+	bottom: 20px;*/
+}
+
+.catalog-item-buy-button {
+	font-family: 'Cuprum', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-top: 13px;
+	box-sizing: border-box;
+	width: 134px;
+	height: 38px;
+	display: block;
+	color: white;
+	box-shadow: 0 3px 3px 0 #367315;
+	background-color: #63a63e;
+	margin:43px auto 0 auto;
+}
+
+.catalog-item-bookmarks-button {
+	font-family: 'Cuprum', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 14px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	width: 134px;
+	height: 38px;
+	display: block;
+	color: black;
+	border: 3px solid #63a63e;
+	border-radius: 3px;
+	margin:10px auto 50px auto;
 }
 
 .popular-brands-header {
@@ -755,8 +949,10 @@ body {
 
 .company-features {
 	position: relative;
+	margin-top: 54px;
 	background-color: #f4f8fa;
 	height: 522px;
+	overflow: hidden;
 }
 
 .company-features:after {
@@ -765,11 +961,14 @@ body {
 	background-image: url("../img/company-features-credit-icon.png");
 	width:465px;
 	height: 285px;
-	right:0;
-	top:230px;
+	right:507px;
+	top:262px;
 }
 
 .company-service-title {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 40px;
 	font-family: "Cuprum", sans-serif;
 	font-size: 30px;
 }
@@ -868,6 +1067,7 @@ body {
 	font-family: "Cuprum", sans-serif;
 	font-size: 30px;
 	margin:0;
+	margin-bottom: 25px;
 	padding: 0;
 }
 
@@ -979,7 +1179,9 @@ body {
 }
 
 .about-perforators h2 {
-  padding-top: 62px;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
   font-size: 30px;
   font-family: "Cuprum";
   color: black;
@@ -987,6 +1189,8 @@ body {
 }
 
 .about-perforators p {
+	margin: 0;
+	padding: 0;
 	font-family: "PTSans";
 	font-size: 13px;
 	line-height: 24px;
@@ -1010,19 +1214,24 @@ body {
 	min-height: 90px;
 }
 
-.footer-nav-top {
 
+.footer-nav-top {
+	padding: 0;
 	margin-top: 40px;
 	padding-bottom: 40px;
-	width: 560px;
+	min-width: 760px;
 	min-height: 20px;
 	margin-bottom: 0;
 }
 
 .footer-pagination-top {
-		margin-right: 35px;
+	margin-right: 56px;
 	color: #f3f7f9;
 	text-decoration: none;
+}
+
+.footer-pagination-top a:nth-child(4n) {
+	margin-right: 0;
 }
 
 .footer-nav li {
@@ -1031,6 +1240,7 @@ body {
 }
 
 .footer-nav-bottom {
+	padding: 0;
 	margin-right: 35px;
 	margin-top: 0;
 	width: 560px;
@@ -1038,7 +1248,7 @@ body {
 }
 
 .footer-pagination-bottom {
-	margin-left: 20px;
+	margin-left: 42px;
 	color: #ffda96;
 	text-decoration: none;
 }
@@ -1059,7 +1269,7 @@ body {
 	padding: 0;
 	color:white;
 	margin-top: 38px;
-	margin-right: 140px;
+	margin-right: 165px;
 	float: left;
 	min-height: 40px;
 	width: 230px;
@@ -1112,7 +1322,7 @@ body {
 	font-size: 16px;
 	color:white;
 	margin-top: 38px;
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 	float: left;
 	min-height: 40px;
 	width: 150px;
