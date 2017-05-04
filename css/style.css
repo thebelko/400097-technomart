@@ -12,7 +12,7 @@ body {
 	margin: 0 auto;
 }
 
-.cleafrix {
+.cleafrix:after {
 	content: "";
 	display: table;
 	clear:both;
@@ -163,6 +163,7 @@ body {
 }
 
 .title-text p {
+	margin-top:8px;
 	font-size: 16px;
 	font-style:italic;
 	color:red;
@@ -196,7 +197,7 @@ body {
 
 .title-adress p {
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 5px;
 	font-family: 'Cuprum', sans-serif;
 	font-size: 14px;
 	color: #3d546e;
@@ -279,7 +280,7 @@ body {
 .main-nav {
 	text-align: center;
 	clear:both;
-	margin-top: 45px;
+	margin-top: 38px;
 	width: 940px;
 	height:60px;
 	background-color: #32425c;
@@ -291,18 +292,40 @@ body {
 }
 
 .main-nav li {
-
 	vertical-align: middle;
 	color:white;
 	display: inline-block;
 }
 
 .main-nav a {
+	margin-right: 50px;
 	color:white;
 }
 
 .breadcrumbs {
 	height:60px;
+}
+
+.breadcrumbs a {
+    font-family: "PT Sans";
+    font-size: 13px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+ 	display: inline-block;
+	margin-top: 22px;
+	margin-right: 37px;
+	position: relative;
+}
+
+.breadcrumbs-arrow:after {
+	position: absolute;
+	background-image: url("../img/breadcrumbs-icon-arrow.png");
+	width: 8px;
+	height: 12px;
+	content: "";
+	top:0px;
+	left:-25px;
 }
 
 /*почему стандартно в него заходят другие блоки?*/
@@ -436,6 +459,24 @@ body {
 	background-size: cover;
 }
 
+.block-perforators-header {
+  font-size: 36px;
+  line-height: 30px;
+  font-family: "Cuprum";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.block-perforators p.block-perforators-slogan {
+  margin-top:10px;
+  font-size: 18px;
+  font-family: "PTSans";
+  font-weight: normal;
+  color: white;
+}
+
+
 .block-perforators a {
 	text-decoration: none;
 	color: white;
@@ -552,7 +593,7 @@ body {
 }
 
 .catalog-items {
-	float:right;
+	float:left;
 	width: 700px;
 	height: 1150px;
 	font-size:0;
@@ -929,11 +970,27 @@ body {
 	height: 182px;
 }
 
+
+
 .about-perforators {
 	clear: both;
 	height: 260px;
 	background-color: #f2f6f8;
+}
 
+.about-perforators h2 {
+  padding-top: 62px;
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: black;
+  text-transform: uppercase;
+}
+
+.about-perforators p {
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 24px;
+	padding-top: 35px;
 }
 
 /* почему footer-nav не переносится вправо внутри

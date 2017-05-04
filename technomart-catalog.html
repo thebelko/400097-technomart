@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -19,31 +22,34 @@
         </form>
         <section class="header-right main-header-item">
           <ul>
-            <li><a class="header-pagination" href="#">Закладки</a></li>
-            <li><a class="header-pagination" href="#">Корзина</a></li>
-            <li><div class="header-basket"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
+            <li class="header-bookmarks"><a class="header-pagination" href="#">Закладки</a></li>
+            <li><a class="header-pagination header-basket" href="#">Корзина: 0</a></li>
+            <li><div class="header-checkout"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
           </ul>
         </section>
         </div>
     </header>
-	<main class="container">
+	<main>
 	<section class="title-section">
-	  <div class="title-text">
+	 <div class="container">
+      <div class="title-section-top clearfix">
+	    <div class="title-text">
 		<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 	  </div>
 	  <div class="title-contacts">
-	  	<div class="title-number">
-	  	  +7 (812) 555-05-55
-	  	</div>
-	  	<div class="title-adress">
-	  		г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-	  	</div>
-	  </div>
+        <div class="title-number">
+          <p>+7 (812) 555-05-55</p>
+        </div>
+        <div class="title-adress">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+      </div>
 	  <div class="title-user-section">
 	    <a class="user-name-line">Равшан Джамшутович</a>
 	  	<a href="#" class="title-user-basket">Мои заказы</a>
 	  	<a href="#" class="title-user-personal-account">Личный кабинет</a>
 	  </div>
+	 </div>
 	  <nav class="main-nav">
 			<ul>
 				<li><div class="main-nav-button"><a class="title-navigation" href="#">Главная</a></div></li>
@@ -54,14 +60,18 @@
 				<li><div class="main-nav-button"><a class="title-navigation" href="#">Доставка</a></div></li>
 				<li><div class="main-nav-button"><a class="title-navigation" href="#">Контакты</a></div></li>
 			</ul>
-	  </nav>
+	   </nav>
+	 </div>
 	</section>	  
-	<div class="breadcrumbs">
-	  <a href="#" class="breadcrumbs-home-button">Домой</a>
-	  <a href="#">Каталог</a>
-	  <a href="#">Инструмент</a>
-	  <a href="#">Перфораторы</a>
+	<div class="breadcrumbs container">
+	  <a href="#" class="breadcrumbs-home-button">
+	    <img src="img/breadcrumbs-icon-home.png" width="15px"
+	    height="12px" alt="Домой"></a>
+	  <a href="#" class="breadcrumbs-arrow">Каталог</a>
+	  <a href="#" class="breadcrumbs-arrow">Инструмент</a>
+	  <a href="#" class="breadcrumbs-arrow">Перфораторы</a>
 	</div>
+   <div class="container">
 	<div class="catalog-item-type">
 		<p>Перфораторы</p>
 	</div>
@@ -105,7 +115,7 @@
 	    <a href="" class="catalog-decreasing-button"><img src="#" alt="вниз"></a>
 	    button
 	  </section>
-	  <section class="catalog-items">
+	  <section class="catalog-items clearfix">
 	    <div class="catalog-item">
 	      <img src="img/bfg-3000.jpg" alt="Перфоратор">
 	      <div class="catalog-item-title">
@@ -222,19 +232,22 @@
 	  	<a href="#"class="catalog-pagination-button">Следующая</a>
 	  </div>
 	  </section>
+	</div>
 	  <section class="about-perforators">
-	  	<h2>Пара слов о перфораторах</h2>
-	  	<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,бетоне и камне.
-		Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-	  </section>
+	    <div class="container">
+	  	  <h2>Пара слов о перфораторах</h2>
+	  	  <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,бетоне и камне.
+		  Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+		</div>
+	  </section>	  
   </main>
-    <footer class="main-footer">
+  	<footer class="main-footer">
       <section class="footer-top">
        <div class="container">
         <div class="main-footer-left">
         <div class="footer-logo">
          <a class="technomart-logo" href="#">
-           <img src="img/technomart-logo.png" alt="Техномарт">
+           Техномарт
          </a>
         </div>
         <div class="footer-contacts">
@@ -268,9 +281,9 @@
             Все права защищены
           </div>
           <div class="footer-social">
-            <a href="#" class="footer-social-vk">Вконтакте</a>
-            <a href="#" class="footer-social-facebook">Фейсбук</a>
-            <a href="#" class="footer-social-instagram">Инстаграм</a>
+            <a href="#" class="footer-social-vk"></a>
+            <a href="#" class="footer-social-facebook"></a>
+            <a href="#" class="footer-social-instagram"></a>
           </div>
           <div class="footer-email-contact">
             Обратная связь:
@@ -280,8 +293,8 @@
             Разработано — 
             <a href="#">htmlacademy.ru</a>
           </div>
-         </div>
-        </section>
+       </div>
+      </section>
     </footer>
   </body>
 </html>
