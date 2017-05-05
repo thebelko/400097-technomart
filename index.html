@@ -22,7 +22,7 @@
         </form>
         <section class="header-right main-header-item">
           <ul>
-            <li class="header-bookmarks"><a class="header-pagination" href="#">Закладки</a></li>
+            <li ><a class="header-pagination header-bookmarks" href="#">Закладки: 0</a></li>
             <li><a class="header-pagination header-basket" href="#">Корзина: 0</a></li>
             <li><div class="header-checkout"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
           </ul>
@@ -156,16 +156,13 @@
             <a href="#" class="catalog-item-price-button">25500 Р.</a>
         </div>      
        </div>
-       <div class="catalog-item">
+       <div class="catalog-item new-catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-2000.jpg" alt="Перфоратор">
         </div>
         <div class="catalog-item-title">
             Перфоратор BOSCH
             BFG 2000
-        </div>
-        <div class="catalog-item-old-price">
-            32500 Р.
         </div>
         <div class="catalog-item-price-button">
             <a href="#" class="catalog-item-price-button">12500 Р.</a>
@@ -277,6 +274,19 @@
         <a href="#" class="company-contacts-button">Заблудились? Напишите нам</a>       
       </div>
     </section>
+    <div class="popup modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть"></button>
+      <div class="popup-top">
+        <form action="#" method="post">
+          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
+          <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
+          <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>            
+      </div>
+      <div class="popup-bottom">
+          <button type='submit'>Отправить</button>
+      </div>
+        </form>          
+    </div>
   </main>
     <footer class="main-footer">
       <section class="footer-top">

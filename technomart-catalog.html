@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <div class="container">
         <div class="header-logo main-header-item">
@@ -22,8 +22,8 @@
         </form>
         <section class="header-right main-header-item">
           <ul>
-            <li class="header-bookmarks"><a class="header-pagination" href="#">Закладки</a></li>
-            <li><a class="header-pagination header-basket" href="#">Корзина: 0</a></li>
+            <li ><a class="header-pagination header-bookmarks" href="#">Закладки: 0</a></li>
+            <li><a class="header-pagination header-basket active-basket" href="#">Корзина: 0</a></li>
             <li><div class="header-checkout"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
           </ul>
         </section>
@@ -83,16 +83,16 @@
 	    <form action="#" method="get">
 	      	<p>Производители</p>
 	        <div class="filter-brand">
-	  	      <p><label><input type="checkbox" name="BOSCH">BOSCH</label></p>
-	 	      <p><label><input type="checkbox" name="interscol">Интерскол</label></p>
-	  	      <p><label><input type="checkbox" name="MAKIta">MAKIta</label></p>
-	  	      <p><label><input type="checkbox" name="Dewalt">Dewalt</label></p>
-	  	      <p><label><input type="checkbox" name="Hitachi">Hitachi</label></p>
+	  	      <p><label><input type="checkbox" name="BOSCH"><span class="checkbox-indicator"></span>BOSCH</label></p>
+	 	      <p><label><input type="checkbox" name="interscol"><span class="checkbox-indicator"></span>Интерскол</label></p>
+	  	      <p><label><input type="checkbox" name="MAKIta"><span class="checkbox-indicator"></span>MAKIta</label></p>
+	  	      <p><label><input type="checkbox" name="Dewalt"><span class="checkbox-indicator"></span>Dewalt</label></p>
+	  	      <p><label><input type="checkbox" name="Hitachi"><span class="checkbox-indicator"></span>Hitachi</label></p>
 	        </div>
 	        <p>Питание</p>
 	        <div class="filter-type">
-              <p><label><input type="radio" name="brand-type" value="Rechargeable">Аккумуляторные</label></p>
-	  	      <p><label><input type="radio" name="brand-type" value="power-supplyed">Сетевые</label></p>
+              <p><label><input type="radio" name="brand-type" value="Rechargeable"><span class="checkbox-indicator"></span>Аккумуляторные</label></p>
+	  	      <p><label><input type="radio" name="brand-type" value="power-supplyed"><span class="checkbox-indicator"></span>Сетевые</label></p>
 	        </div>
 	        <div class="filter-button">
 		      <button type='submit'>Показать</button>
@@ -148,7 +148,7 @@
             <a href="#">25500 Р.</a>
         </div>      
        </div>
-	  <div class="catalog-item">
+	  <div class="catalog-item new-catalog-item">
 	    <a href="#" class="catalog-item-buy-button">Купить</a>
 	    <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
 	      <div class="catalog-item-title">
@@ -174,7 +174,7 @@
             <a href="#">15500 Р.</a>
         </div>      
        </div>
-	  <div class="catalog-item">
+	  <div class="catalog-item new-catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/BFG-6000.jpg" alt="Перфоратор">
         </div>
@@ -201,7 +201,7 @@
             <a href="#">12500 Р.</a>
         </div>      
        </div>
-	  <div class="catalog-item">
+	  <div class="catalog-item new-catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/BFG-3000.jpg" alt="Перфоратор">
         </div>
