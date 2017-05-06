@@ -11,7 +11,7 @@
 </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="header-logo main-header-item">
           <a class="technomart-logo" href="#">
             Техномарт
@@ -23,7 +23,7 @@
         </form>
         <section class="header-right main-header-item">
           <ul>
-            <li class="header-bookmarks"><a class="header-pagination" href="#">Закладки</a></li>
+            <li ><a class="header-pagination header-bookmarks" href="#">Закладки: 0</a></li>
             <li><a class="header-pagination header-basket" href="#">Корзина: 0</a></li>
             <li><div class="header-checkout"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
           </ul>
@@ -157,16 +157,13 @@
             <a href="#" class="catalog-item-price-button">25500 Р.</a>
         </div>      
        </div>
-       <div class="catalog-item">
+       <div class="catalog-item new-catalog-item">
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-2000.jpg" alt="Перфоратор">
         </div>
         <div class="catalog-item-title">
             Перфоратор BOSCH
             BFG 2000
-        </div>
-        <div class="catalog-item-old-price">
-            32500 Р.
         </div>
         <div class="catalog-item-price-button">
             <a href="#" class="catalog-item-price-button">12500 Р.</a>
@@ -215,6 +212,7 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.          
         </div>
       </div>
+      <div class="company-service-feature-section">
       <div class="company-service-feature-list">
         <ul>
             <li class="unactive-feature-list">Доставка</li>
@@ -225,25 +223,27 @@
       <div class="feature-delivery">
         <h3 class="company-feature-title">Доставка</h3>
         <div class="company-feature-description">
-          Мы с удовольствием доставим ваш товар прямо 
+          Мы с удовольствием доставим ваш товар прямо<br> 
           к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем.           
+          Ведь мы неплохо заработаем,<br>
+          поднимая его на ваш этаж!          
         </div>
       </div>
       <div class="feature-guarantee">
         <h3 class="company-feature-title">Гарантия</h3>
         <div class="company-feature-description">
-          Если купленный у нас товар поломается или заискрит, 
-          а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+          Если купленный у нас товар поломается или заискрит,<br> 
+          а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.
         </div>
       </div>
       <div class="feature-credit">
         <h3 class="company-feature-title">Кредит</h3>
         <div class="company-feature-description">
-          Залезть в долговую яму стало проще! 
+          Залезть в долговую яму стало проще!<br> 
           Кредитные консультанты придут вам на помощь.
           <a href="#" class="company-feature-button">Отправить заявку</a>           
         </div>
+      </div>
       </div>
      </div>
     </section>
@@ -278,6 +278,19 @@
         <a href="#" class="company-contacts-button">Заблудились? Напишите нам</a>       
       </div>
     </section>
+    <div class="popup modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть"></button>
+      <div class="popup-top">
+        <form action="#" method="post">
+          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
+          <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
+          <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>            
+      </div>
+      <div class="popup-bottom">
+          <button type='submit'>Отправить</button>
+      </div>
+        </form>          
+    </div>
   </main>
     <footer class="main-footer">
       <section class="footer-top">
