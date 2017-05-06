@@ -9,10 +9,13 @@ body {
 
 .container {
 	width: 940px;
+	/*box-sizing: border-box;	*/
+	padding-right: 10px;
+	padding-left: 10px;
 	margin: 0 auto;
 }
 
-.cleafrix:after {
+.clearfix:after {
 	content: "";
 	display: table;
 	clear:both;
@@ -419,6 +422,7 @@ body {
 }
 
 .catalog-item-type p {
+	line-height: 30px;
     font-size: 30px;
     font-family: "Cuprum";
     color: 32425c;
@@ -432,7 +436,7 @@ body {
 	background-color: #f2f6f8;
 	height: 90px;
 	padding-left: 28px;
-	padding-top: 33px;
+	padding-top: 30px;
 }
 
 .price-filter {
@@ -847,8 +851,10 @@ body {
 }
 
 
+
 .popular-section {
-	height:450px;
+	font-size:0;
+	min-height:450px;
 }
 
 .popular-items-header h2 {
@@ -867,7 +873,6 @@ body {
 .popular-items-header {
 	background-color: #f9f5f0;
 	margin-bottom: 20px;
-	height: 90px;
 }
 
 .popular-items-header-button {
@@ -894,7 +899,7 @@ body {
 }
 
 .popular-items-wrapper {
-	height:360px;
+	min-height:340px;
 	font-size:0;
 }
 
@@ -1066,16 +1071,8 @@ body {
 }
 
 
-.popular-section {
-	font-size: 0;
-}
 
-/*.popular-section a {
-	font-size: 12px;
-}*/
-/*.popular-brands {
-	height: 505px;
-}*/
+
 
 .popular-brand {
 	margin-left: 0px;
@@ -1321,7 +1318,7 @@ body {
 	margin: 0;
 	margin-top: 85px;
 	padding: 0;
-	width:310px;
+	width:300px;
 	display: inline-block;
 }
 
@@ -1344,7 +1341,7 @@ body {
 }
 
 .popup {	
-	display: none;
+	/*display: none;*/
 	/*box-sizing: border-box;*/
 	/*padding: 40px 80px 0 80px;*/
 	box-shadow: 0 15px 50px black;
@@ -1357,6 +1354,15 @@ body {
 	background-color: white;	
 	position: absolute;
 }
+
+::-webkit-input-placeholder {
+	font-family: "PTSans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+	color:#a9a9a9;
+	padding-left: 10px;
+}
+
 
 .popup .modal-content-close {
 	border: none;
@@ -1536,16 +1542,16 @@ body {
 
 
 .footer-nav-top {
+	text-align: center;
+	word-spacing: 55px;
 	padding: 0;
 	margin-top: 40px;
 	padding-bottom: 40px;
-	min-width: 760px;
 	min-height: 20px;
 	margin-bottom: 0;
 }
 
 .footer-pagination-top {
-	margin-right: 56px;
 	color: #f3f7f9;
 	text-decoration: none;
 }
@@ -1561,14 +1567,14 @@ body {
 
 .footer-nav-bottom {
 	padding: 0;
-	margin-right: 35px;
+	/*margin-right: 35px;*/
 	margin-top: 0;
-	width: 560px;
+	/*width: 550px;*/
 	min-height: 75px;
 }
 
 .footer-pagination-bottom {
-	margin-left: 42px;
+	margin-left: 40px;
 	color: #ffda96;
 	text-decoration: none;
 }
@@ -1642,10 +1648,10 @@ body {
 	font-size: 16px;
 	color:white;
 	margin-top: 38px;
-	/*margin-right: 10px;*/
+	margin-left: 25px;
 	float: left;
 	min-height: 40px;
-	width: 150px;
+	width: 130px;
 }
 
 .footer-developed a {
