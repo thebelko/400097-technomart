@@ -16,14 +16,14 @@
             Техномарт
           </a>
         </div>
-        <form class="header-search main-header-item" method="post" action="#">
-          <input type="search">
+         <form class="header-search main-header-item" method="post" action="#">
+            <input type="search"><span class="header-search-visible"></span>
           <!-- <input type="submit" value="Отправить"> -->
-        </form>
+          </form>
         <section class="header-right main-header-item">
           <ul>
             <li ><a class="header-pagination header-bookmarks" href="#">Закладки: 0</a></li>
-            <li><a class="header-pagination header-basket active-basket" href="#">Корзина: 0</a></li>
+            <li><a class="header-pagination header-basket active-basket" href="#">Корзина: 10</a></li>
             <li><div class="header-checkout"><a class="header-pagination" href="#">Оформить заказ</a></div></li>
           </ul>
         </section>
@@ -45,20 +45,22 @@
         </div>
       </div>
 	  <div class="title-user-section">
-	    <a class="user-name-line">Равшан Джамшутович</a>
+	  	<!-- <a href="" class="icon-user"></a> -->
+	    <a href="#" class="user-name-line">Равшан Джамшутович</a>
+	    <!-- <a href="" class="icon-logout"></a> -->
 	  	<a href="#" class="title-user-basket">Мои заказы</a>
 	  	<a href="#" class="title-user-personal-account">Личный кабинет</a>
 	  </div>
 	 </div>
 	  <nav class="main-nav">
 			<ul>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Главная</a></div></li>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Компания</a></div></li>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Каталог</a></div></li>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Новости</a></div></li>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Спецпредложения</a></div></li>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Доставка</a></div></li>
-				<li><div class="main-nav-button"><a class="title-navigation" href="#">Контакты</a></div></li>
+				<li><a class="title-navigation" href="#">Главная</a></li>
+				<li><a class="title-navigation" href="#">Компания</a></li>
+				<li><a class="title-navigation" href="#">Каталог</a></li>
+				<li><a class="title-navigation" href="#">Новости</a></li>
+				<li><a class="title-navigation" href="#">Спецпредложения</a></li>
+				<li><a class="title-navigation" href="#">Доставка</a></li>
+				<li><a class="title-navigation" href="#">Контакты</a></li>
 			</ul>
 	   </nav>
 	 </div>
@@ -103,13 +105,13 @@
 	   <section class="catalog-sorting">
 	    <div class="catalog-sorting-title">
 	      <p>Сортировка</p>
-	    <a href="#" class="catalog-sorting-by-price">
+	    <a href="#" class="catalog-sorting-by-price catalog-sorting-button">
 	    	По Цене
 	    </a>
-	    <a href="#" class="catalog-sorting-by-type">
+	    <a href="#" class="catalog-sorting-by-type catalog-sorting-button">
 	    	По типу
 	    </a>
-	    <a href="#" class="catalog-sorting-by-functional">
+	    <a href="#" class="catalog-sorting-by-functional catalog-sorting-button">
 	    	По функционалу
 	    </a>
 	    <a href="" class="catalog-increasing-button catalog-title-button"><img src="img/catalog-sorting-up.png" alt="вверх"></a>
@@ -147,7 +149,7 @@
             <a href="#">25500 Р.</a>
         </div>      
        </div>
-	  <div class="catalog-item new-catalog-item">
+	  <div class="catalog-item new-catalog-item focused-catalog-item">
 	    <a href="#" class="catalog-item-buy-button">Купить</a>
 	    <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
 	      <div class="catalog-item-title">
@@ -243,7 +245,7 @@
         </div>      
        </div>
 	  <div class="catalog-pagination">
-	  	<a href="#" class="pagination-active">1</a>
+	  	<a class="pagination-active">1</a>
 	  	<a href="#">2</a>
 	  	<a href="#">3</a>
 	  	<a href="#">Следующая</a>
