@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="title-user-buttons">
-        <div class="title-button login-button"><a href="#" class="title-button login-button"><p>Войти</p></a></div>
+        <div class="title-button login-button"><a href="#" class="title-button login-button"><span>Войти</span></a></div>
         <div class="title-button registration-button"><a href="#" class="title-button registration-button">Регистрация</a></div>
       </div>
       </div>
@@ -293,24 +293,7 @@
         <a href="#" class="company-contacts-button">Заблудились? Напишите нам</a>       
       </div>
     </section>
-    <div class="popup modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть"></button>
-      <div class="popup-top">
-        <form action="#" method="post">
-          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
-          <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
-          <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>            
-      </div>
-      <div class="popup-bottom">
-          <button type='submit'>Отправить</button>
-      </div>
-        </form>          
-    </div>
-    <div class="modal-map">
-      <button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="yandex-map"></div>
-    </div>
-  </main>
+    </main>
     <footer class="main-footer">
       <section class="footer-top">
        <div class="container">
@@ -366,6 +349,24 @@
        </div>
       </section>
     </footer>
+    <div class="popup modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">
+      </button>      
+        <form action="#" method="post">
+        <div class="popup-top">
+          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
+          <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
+          <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>
+        </div>            
+      <div class="popup-bottom">
+          <button type='submit'>Отправить</button>
+      </div>
+        </form>          
+    </div>
+    <div class="modal-map">
+      <button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
   </body>
 </html>
 

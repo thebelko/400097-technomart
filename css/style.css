@@ -53,7 +53,6 @@ body {
 	/*height: 47px;*/
 	display: inline-block;
 	text-align:center;
-	background-size: cover;
 	font-size: 24px;
 	line-height: 42px;
 	color: #ffffff;
@@ -373,7 +372,8 @@ body {
 	text-decoration: none;
 }
 
-.login-button p {
+.login-button span {
+	padding: 0;
 	position: relative;
 	margin:0;
 	margin-left: 40px;
@@ -586,7 +586,7 @@ body {
 	clear:both;
 	margin-top: 38px;
 	width: 940px;
-	height:61px;
+	min-height:61px;
 	background-color: #32425c;
 	line-height: 61px;
 }
@@ -626,7 +626,7 @@ body {
 }
 
 .breadcrumbs {
-	height:60px;
+	min-height:60px;
 }
 
 .breadcrumbs a {
@@ -664,7 +664,7 @@ body {
 .catalog-item-type {
 	box-sizing: border-box;
 	background-color: #f2f6f8;
-	height: 90px;
+	min-height: 90px;
 	padding-left: 28px;
 	padding-top: 30px;
 }
@@ -679,7 +679,7 @@ body {
 
 .filter-list {
 	float:left;
-	height: 750px;
+	min-height: 750px;
 	width: 220px;
 	margin-right: 20px;
 }
@@ -900,12 +900,12 @@ body {
 
 
 .feature-blocks-section {
-	height: 520px;
+	min-height: 520px;
 }
 
 .feature-block {
 	margin-top: 20px;
-	height: 123px;
+	min-height: 123px;
 	width:300px;
 }
 
@@ -933,7 +933,7 @@ body {
 	border-radius: 3px;
 	vertical-align: middle;
 	text-align: center;
-	height: 37px;
+	min-height: 37px;
 	width: 135px;
 }
 
@@ -951,7 +951,6 @@ body {
 	float: left;
 	margin-right: 20px;
 	background-color: #ffbf47;
-	background-size: cover;
 	position: relative;
 }
 
@@ -975,7 +974,6 @@ body {
 	float: left;
 	margin-right: 20px;
 	background-color:#3bbce3;
-	background-size: cover;
 	position: relative;
 }
 
@@ -999,7 +997,6 @@ body {
 	float: right;
 	margin-right: 0px;
 	background-image: url("../img/block-section-technics.png");
-	background-size: cover;
 	position: relative;
 }
 
@@ -1020,9 +1017,8 @@ body {
 .block-perforators {
 	float:left;
 	width: 620px;
-	height: 265px;
+	min-height: 265px;
 	background-image: url("../img/block-perforators-slider1.jpg");
-	background-size: cover;
 }
 
 .block-perforators .block-perforators-header {
@@ -1055,7 +1051,7 @@ body {
 	border-radius: 3px;
 	vertical-align: middle;
 	text-align: center;
-	height: 37px;
+	min-height: 37px;
 	width: 200px;
 }
 
@@ -1072,7 +1068,6 @@ body {
 	margin-left: 20px;
 	float: left;
 	background-image: url("../img/block-section-discounts.png");
-	background-size: cover;
 	position: relative;
 
 }
@@ -1096,7 +1091,6 @@ body {
 	margin-left: 20px;
 	float: left;
 	background-image: url("../img/block-section-delivery.png");
-	background-size: cover;
 	position: relative;
 }
 
@@ -1126,7 +1120,8 @@ body {
 	margin-top: 35px;
 	margin-left: 28px;
 	font-size: 30px;
-	/*line-height: 30px;*/
+	text-transform: uppercase;
+	line-height: 30px;
 	color: #3d546e;
 	/*vertical-align: middle;*/
 	font-family: "Cuprum", sans-serif;
@@ -1144,7 +1139,7 @@ body {
 	margin-right: 25px;
 	margin-top: 25px;
 	width:250px;
-	height: 40px;
+	min-height: 40px;
 	float: right;
 	background-color: #ff5357;
 	border-radius: 5px;
@@ -1170,7 +1165,7 @@ body {
 .catalog-items {
 	float:left;
 	width: 700px;
-	height: 1143px;
+	min-height: 1143px;
 	margin-top: 20px;
 	font-size:0;
 }
@@ -1328,7 +1323,7 @@ body {
 	background-color: #f9f5f0;
 	text-transform: uppercase;
 	margin-bottom: 20px;
-	height: 90px;
+	min-height: 90px;
 }
 
 .popular-brands-header h2 {
@@ -1350,7 +1345,7 @@ body {
 	margin-right: 25px;
 	margin-top: 25px;
 	width:250px;
-	height: 40px;
+	min-height: 40px;
 	float: right;
 	background-color: #ff5357;
 	border-radius: 5px;
@@ -1380,9 +1375,8 @@ body {
 	width:218px;
 	text-align: center;
 	vertical-align: top;
-	display: inline-block;
 	border: 1px solid gray;
-	height:143px;
+	min-height:143px;
 	line-height: 143px;
 }
 
@@ -1411,7 +1405,7 @@ body {
 	position: relative;
 	margin-top: 54px;
 	background-color: #f4f8fa;
-	height: 522px;
+	min-height: 522px;
 	overflow: hidden;
 }
 
@@ -1483,7 +1477,7 @@ body {
 	padding-top: 70px;
 	width: 240px;
 	line-height: 60px;
-	height: 180px;
+	min-height: 180px;
 }
 
 .company-service-feature-list ul {
@@ -1584,13 +1578,13 @@ body {
 .about-company-and-contacts {
 	font-size: 0px;
 	padding: 0;
-	height:536px;
+	min-height:536px;
 
 }
 
 .about-company {
 	font-family: "PTSans", sans-serif;
-	height: 400px;
+	min-height: 400px;
 	font-size: 12px;
 	line-height: 24px;
 	margin: 0;
@@ -1661,18 +1655,17 @@ body {
 }
 
 .company-contacts {
-	height:400px;
+	min-height:400px;
 	float:right;
 	font-size: 13px;
 	margin: 0;
 	margin-top: 85px;
 	padding: 0;
 	width:300px;
-	display: inline-block;
 }
 
 .company-contacts-description {
-	height: 75px;
+	min-height: 75px;
 }
 
 .company-contacts-button {
@@ -1690,18 +1683,18 @@ body {
 }
 
 .popup {	
-	display: none;
+	/*display: none;*/
 	/*box-sizing: border-box;*/
 	/*padding: 40px 80px 0 80px;*/
 	box-shadow: 0 15px 50px black;
 	border-top: 7px solid #ff5257;	
-	height: 430px;
+	min-height: 430px;
 	width: 620px;
 	bottom: 200px;
 	left:50%;
 	margin-left: -310px;
 	background-color: white;	
-	position: absolute;
+	position: fixed;
 }
 
 
@@ -1723,6 +1716,7 @@ body {
 }
 
 .popup-top {
+	min-height: 310px;
 	position: relative;
 	box-sizing: border-box;
 	padding: 40px 80px 0 80px;
@@ -1732,7 +1726,7 @@ body {
 
 .popup form {
 	background-color: white;
-	height: 270px;
+	min-height: 270px;
 }
 
 .popup label {
@@ -1761,7 +1755,7 @@ body {
 
 .popup-bottom {
 	box-sizing: border-box;
-	height: 120px;
+	min-height: 120px;
 	margin: 0;
 	padding: 38px 80px 38px 80px;
 	background-color: #f4f4f4;
@@ -1789,7 +1783,7 @@ body {
 	top:16%;
 	left:24%;
     width: 970px;
-    height: 476px;
+    min-height: 476px;
     background: url("../img/map.png");
 }
 
@@ -1810,7 +1804,7 @@ body {
 
 .footer-top {
 	padding: 0;
-	height: 194px;
+	min-height: 194px;
 	background-color: #32425c;
 }
 
@@ -1866,7 +1860,7 @@ body {
 
 .about-perforators {
 	clear: both;
-	height: 260px;
+	min-height: 260px;
 	background-color: #f2f6f8;
 }
 
@@ -1964,7 +1958,7 @@ body {
 
 .footer-bottom {
 	background-color: #293449;
-	height:107px;
+	min-height:107px;
 }
 
 .footer-copyright {
