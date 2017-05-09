@@ -18,7 +18,7 @@
           </a>
         </div>
           <form class="header-search main-header-item" method="post" action="#">
-            <input type="search"><span class="header-search-visible"></span>
+            <input type="search" placeholder="Поиск:"><label></label>
           <!-- <input type="submit" value="Отправить"> -->
           </form>
         <section class="header-right main-header-item">
@@ -46,7 +46,7 @@
         </div>
       </div>
       <div class="title-user-buttons">
-        <div class="title-button login-button"><a href="#" class="title-button login-button"><p>Войти</p></a></div>
+        <div class="title-button login-button"><a href="#" class="title-button login-button"><span>Войти</span></a></div>
         <div class="title-button registration-button"><a href="#" class="title-button registration-button">Регистрация</a></div>
       </div>
       </div>
@@ -113,6 +113,10 @@
       </div>
       <div class="popular-items-wrapper">
        <div class="catalog-item">
+         <div class="catalog-item-actions">
+                    <a href="#" class="catalog-item-buy-button">Купить</a>
+                    <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
+         </div>
         <div class="catalog-item-image-wrapper">
           <img src="img/BFG-9000.jpg" alt="Перфоратор">
         </div>
@@ -128,6 +132,10 @@
         </div>      
        </div>
        <div class="catalog-item">
+         <div class="catalog-item-actions">
+                    <a href="#" class="catalog-item-buy-button">Купить</a>
+                    <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
+         </div>
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-3000.jpg" alt="Перфоратор">
         </div>
@@ -143,6 +151,10 @@
         </div>      
        </div>
        <div class="catalog-item">
+         <div class="catalog-item-actions">
+                    <a href="#" class="catalog-item-buy-button">Купить</a>
+                    <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
+         </div>
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-6000.jpg" alt="Перфоратор">
         </div>
@@ -158,6 +170,10 @@
         </div>      
        </div>
        <div class="catalog-item new-catalog-item">
+         <div class="catalog-item-actions">
+                    <a href="#" class="catalog-item-buy-button">Купить</a>
+                    <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
+         </div>
         <div class="catalog-item-image-wrapper">
           <img src="img/bfg-2000.jpg" alt="Перфоратор">
         </div>
@@ -278,20 +294,7 @@
         <a href="#" class="company-contacts-button">Заблудились? Напишите нам</a>       
       </div>
     </section>
-    <div class="popup modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть"></button>
-      <div class="popup-top">
-        <form action="#" method="post">
-          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
-          <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
-          <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>            
-      </div>
-      <div class="popup-bottom">
-          <button type='submit'>Отправить</button>
-      </div>
-        </form>          
-    </div>
-  </main>
+    </main>
     <footer class="main-footer">
       <section class="footer-top">
        <div class="container">
@@ -347,6 +350,24 @@
        </div>
       </section>
     </footer>
+    <div class="popup modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">
+      </button>      
+        <form action="#" method="post">
+        <div class="popup-top">
+          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
+          <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
+          <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>
+        </div>            
+      <div class="popup-bottom">
+          <button type='submit'>Отправить</button>
+      </div>
+        </form>          
+    </div>
+    <div class="modal-map">
+      <button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
+    </div>
   </body>
 </html>
 
