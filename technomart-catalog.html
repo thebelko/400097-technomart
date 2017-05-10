@@ -48,7 +48,7 @@
 	  	<div class="user-name-line">
 	  	  <a href="" class="icon-user"></a>
 	    	<a href="#" class="user-name">Равшан Джамшутович</a>
-	    	<a href="" class="icon-logout">
+	    	<a href="" class="icon-logout"></a>
 	    </div>
 	  	<a href="#" class="title-user-basket">Мои заказы</a>
 	  	<a href="#" class="title-user-personal-account">Личный кабинет</a>
@@ -79,12 +79,25 @@
 	<div class="catalog-item-type">
 		<p>Перфораторы</p>
 	</div>
-<!-- 	<div class="container"> -->
 	<section class="filter-list">
 	  <div class="filter-list-title">Фильтр:</div>	    
 	    <form action="#" method="get">
 	    <div class="price-filter">
-	    </div>
+	    	<div class="price-filter-title">
+	    		Цена:
+	    	</div>
+	    	<div class="range-controls">
+      	  <div class="scale">
+          <div class="bar"></div>
+        </div>
+				<div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>        
+      	</div>
+      	<div class="price-controls">
+          <label class="min-price"><input type="text" name="min-price" value="0"></label>
+        	<label class="max-price"><input type="text" name="max-price" value="30000"></label>
+      	</div>
+      </div>
 	      	<p>Производители</p>
 	        <div class="filter-brand">
 	  	      <p><label><input type="checkbox" name="BOSCH"><span class="checkbox-indicator"></span>BOSCH</label></p>
@@ -127,7 +140,7 @@
                     <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
          </div>
         <div class="catalog-item-image-wrapper">
-          <img src="img/BFG-3000.jpg" alt="Перфоратор">
+          <img src="img/bfg-3000.jpg" alt="Перфоратор">
         </div>
         <div class="catalog-item-title">
             Перфоратор BOSCH
@@ -146,7 +159,7 @@
                     <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
          </div>
         <div class="catalog-item-image-wrapper">
-          <img src="img/BFG-6000.jpg" alt="Перфоратор">
+          <img src="img/bfg-6000.jpg" alt="Перфоратор">
         </div>
         <div class="catalog-item-title">
             Перфоратор BOSCH
@@ -165,7 +178,7 @@
                     <a href="#" class="catalog-item-bookmarks-button">В закладки</a>
          </div>
 	    <div class="catalog-item-image-wrapper">
-          <img src="img/BFG-2000.jpg" alt="Перфоратор">
+          <img src="img/bfg-2000.jpg" alt="Перфоратор">
         </div>
 	      <div class="catalog-item-title">
 	    	Перфоратор BOSCH
@@ -299,7 +312,18 @@
 	  	  <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,бетоне и камне.<br>
 		  Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</div>
-	  </section>	  
+	  </section>
+	  <div class="catalog-popup modal-catalog-content">
+      <button class="modal-catalog-content-close" type="button" title="Закрыть">
+      </button>
+      <p>Товар добавлен в корзину!</p>     
+      <div class="catalog-popup-bottom">
+      	<button class="modal-catalog-make-order" type="button" title="Оформить заказ">Оформить заказ
+      </button>
+      	<button class="modal-catalog-continue-shopping" type="button" title="Продолжить покупки">Продолжить покупки
+      </button>      
+      </div> 
+    </div>	  
   </main>
   	<footer class="main-footer">
       <section class="footer-top">
@@ -351,7 +375,7 @@
           </div>
           <div class="footer-developed">
             Разработано — 
-            <a href="#">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </div>
        </div>
       </section>
