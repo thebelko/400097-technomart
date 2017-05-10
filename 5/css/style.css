@@ -588,7 +588,7 @@ body {
 	width: 940px;
 	min-height:61px;
 	background-color: #32425c;
-	line-height: 61px;
+	line-height: 58px;
 }
 
 .main-nav ul{
@@ -769,6 +769,19 @@ body {
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-on.png");
+}
+
+.filter-button button {
+	display: block;
+	width: 140px;
+	height: 37px;
+	border: 1px solid #e5e5e5;
+	background: none;
+	color: black;
+	text-transform: uppercase;
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 18px;
 }
 
 
@@ -1033,7 +1046,7 @@ body {
 .block-perforators p.block-perforators-slogan {
   margin-top:10px;
   font-size: 18px;
-  font-family: "PTSans";
+  font-family: "PT Sans";
   font-weight: normal;
   color: white;
 }
@@ -1117,15 +1130,13 @@ body {
 .popular-items-header h2 {
 	display: inline-block;
 	margin: 0;
-	margin-top: 35px;
+	margin-top: 32px;
 	margin-left: 28px;
 	font-size: 30px;
 	text-transform: uppercase;
 	line-height: 30px;
 	color: #3d546e;
-	/*vertical-align: middle;*/
 	font-family: "Cuprum", sans-serif;
-	font-weight: regular;
 }
 
 .popular-items-header {
@@ -1175,7 +1186,7 @@ body {
 	margin-bottom: 20px;
 	font-size:12px;
 	text-align:center;
-	margin-right:20px;
+	margin-right:22px;
 	width:218px;
 	min-height: 318px;
 	display: inline-block;
@@ -1454,7 +1465,7 @@ body {
 	text-transform: uppercase;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 34px;
 	font-family: "Cuprum", sans-serif;
 	font-size: 30px;
 }
@@ -1467,7 +1478,7 @@ body {
 }
 
 .company-service {
-	padding-top: 62px;
+	padding-top: 70px;
 	min-height: 107px;
 	width: 400px;
 }
@@ -1682,19 +1693,59 @@ body {
 	color: white;
 }
 
+.company-contacts-landmark {
+	cursor: pointer;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(2000px);
+  }
+  70%  {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+
+
 .popup {	
-	/*display: none;*/
+	display: none;
 	/*box-sizing: border-box;*/
 	/*padding: 40px 80px 0 80px;*/
 	box-shadow: 0 15px 50px black;
 	border-top: 7px solid #ff5257;	
 	min-height: 430px;
 	width: 620px;
-	bottom: 200px;
+	bottom: 300px;
 	left:50%;
 	margin-left: -310px;
 	background-color: white;	
 	position: fixed;
+}
+
+.modal-content-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 1s;
 }
 
 
@@ -1787,10 +1838,16 @@ body {
     background: url("../img/map.png");
 }
 
+.modal-map-show {
+	animation-name: bounce;
+	animation-duration: 1s;
+	display: block;
+}
+
 .modal-map-close {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 52px;
+  right: 13px;
 
   width: 22px;
   height: 22px;
@@ -1986,7 +2043,7 @@ body {
 	display: inline-block;
 	width: 40px;
 	height: 40px;
-	background-color: #29384a;
+	background-color: #212a3a;
 	border-radius: 50px;
 }
 
