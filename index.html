@@ -63,7 +63,7 @@
      </div>
     </section>  
     <section class="feature-blocks-section container">
-        <div class="block-materials feature-block">
+        <div class="block-materials new-catalog-item feature-block">
           <p>Материалы</p>
           <div class="block-material-button">
             <a href="#">На любой вкус</a>
@@ -268,7 +268,7 @@
         <div class="about-company-description">
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
         </div>
         <div class="about-company-list">
@@ -287,7 +287,7 @@
         <div class="company-contacts-description">
           Вы можете забрать товар сами, заехав в наш офис:
         </div>
-        <div class="company-contacts-landmark">
+        <div class="company-contacts-landmark open-map">
             <img src="img/company-map.jpg" alt="Расположение компании">
         </div>
         <a href="#" class="company-contacts-button">Заблудились? Напишите нам</a>       
@@ -354,7 +354,7 @@
       </button>      
         <form action="#" method="post">
         <div class="popup-top">
-          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
+          <label for="popup-name"><p>Ваше имя:</p><input type="text" name="user-name" id="popup-name" placeholder="Представьтесь, пожалуйста"></input></label>          
           <label for="popup-email"><p>Ваш email:</p><input type="text" name="email" id="popup-email" placeholder="Для отправки ответа"></textarea></label>          
           <label for="popup-textarea" class="popup-textarea-section"><p>Текст письма:</p><textarea id="popup-textarea" placeholder="В свободной форме"></textarea></label>
         </div>            
@@ -365,8 +365,78 @@
     </div>
     <div class="modal-map">
       <button class="modal-map-close" type="button" title="Закрыть">Закрыть</button>
-      <div id="yandex-map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.597031190559!2d30.322967767393692!3d59.939145231909194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494400446636" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+    <script>
+      var link = document.querySelector(".company-contacts-button");
+      var popup = document.querySelector(".modal-content");
+      var close = document.querySelector(".modal-content-close");
+      var login = popup.querySelector("[name=user-name]");
+      var email = popup.querySelector("[name=email]");
+      var form = popup.querySelector("form");
+      var storage = localStorage.getItem("user-name");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+          if (storage) {
+          login.value = storage;
+          email.focus();
+        } else {
+
+        login.focus();
+        }
+      });
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+      form.addEventListener("submit", function(event) {
+        if (!login.value || !email.value) {
+          event.preventDefault();
+          popup.classList.add("modal-error");
+          } else {
+            localStorage.setItem("user-name", login.value);
+          }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+          }
+        }
+      });
+
+// Карта
+
+      var mapOpen = document.querySelector(".open-map");
+      var mapPopup = document.querySelector(".modal-map");
+      var mapClose = mapPopup.querySelector(".modal-map-close");
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal-map-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal-map-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal-map-show")) {
+            mapPopup.classList.remove("modal-map-show");
+          }
+        }
+      });
+
+
+
+
+    </script>
   </body>
 </html>
 
