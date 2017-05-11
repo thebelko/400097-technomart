@@ -71,6 +71,7 @@ body {
 }
 
 .header-pagination {
+	text-indent: 15px;
 	text-decoration: none;
 	color: #ffffff;
 
@@ -176,12 +177,12 @@ body {
 }
 
 .header-bookmarks {
-  font-size: 17px;
-  font-family: "Cuprum";
-  color: white;
+	/*text-indent: 15px;*/
+    font-size: 17px;
+    font-family: "Cuprum";
+    color: white;
 	position: relative;
 	box-sizing: border-box;
-    /*margin-left: 15px;*/
     display: inline-block;
     text-align: center;
     width: 100%;
@@ -201,7 +202,7 @@ body {
 	width: 14px;
 	height: 16px;
 	top:12px;
-	left:12px;
+	left:15px;
 	opacity: 0.3;
 	background-image: url("../img/header-bookmark-icon.png");
 }
@@ -236,6 +237,7 @@ body {
 }
 
 .catalog-page .header-basket.active-basket {
+	text-indent: 25px;
 	color: white;
 	position: relative;
 	box-sizing: border-box;
@@ -284,15 +286,15 @@ body {
 
 .title-text {
 	font-family: 'Cuprum', sans-serif;
-	font-style: italic;
-	font-size: 16px;
-	line-height: 23px;
-	margin-top:40px;
-	margin-left: 48px;
-	padding: 0;
-	height: 76px;
-	float:left;
-	width: 200px;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 41px;
+    margin-left: 50px;
+    padding: 0;
+    height: 76px;
+    float: left;
+    width: 197px;
 }
 
 .title-text p {
@@ -304,7 +306,7 @@ body {
 
 .title-contacts {
 	text-align: center;
-	margin-left:60px;
+	margin-left: 75px;
 	margin-top:45px;
 	/*padding-top: 20px;*/
 	float:left;
@@ -313,6 +315,7 @@ body {
 }
 
 .title-number {
+	width: 260px;
 	display: block;
 	height: 40px;
 	line-height: 40px;
@@ -320,7 +323,8 @@ body {
 }
 
 .title-number p {
-	padding-left: 18px;
+	text-indent: 20px;
+	padding-left: 1px;
 	position: relative;
 	font-family: 'Cuprum', sans-serif;
 	font-size: 21px;
@@ -334,15 +338,18 @@ body {
 	content: "";
 	width: 19px;
 	height: 19px;
-	left: 23px;
+	left: 10px;
 	top: 10px;
 	background-image: url("../img/icon-phone.png");
 }
 
 
 .title-adress p {
+	text-indent: 8px;
+    text-align: left;
 	margin: 0;
-	margin-top: 5px;
+	margin-top: 7px;
+    margin-right: 7px;
 	font-family: 'Cuprum', sans-serif;
 	font-size: 14px;
 	color: #3d546e;
@@ -352,19 +359,18 @@ body {
 	float:right;
 	margin-top:34px;
 	width: 300px;
-	height: 44px;
 	text-align: center;
 
 }
 
 .login-button {
 	position: relative;
-	width:120px;
+	width:106px;
 	height: 45px;
 	display: inline-block;
 	margin-top: 11px;
 	margin-right: 0;
-	margin-left: 10px;
+    margin-left: 16px;
 	background-color: white;
 	line-height: 45px;
 	color:black;
@@ -375,7 +381,7 @@ body {
 	padding: 0;
 	position: relative;
 	margin:0;
-	margin-left: 40px;
+	margin-left: 22px;
 }
 
 .login-button:before {
@@ -384,7 +390,7 @@ body {
 	width: 21px;
 	height: 17px;
 	top:14px;
-	right: 80px;
+	right: 86px;
 	background-image: url("../img/title-icon-login.png");
 }
 
@@ -398,7 +404,7 @@ body {
 	width: 21px;
 	height: 17px;
 	top:14px;
-	right: 80px;
+	right: 86px;
 	z-index: 50000;
 	background-image: url("../img/title-icon-login-hover.png");
 }
@@ -422,12 +428,12 @@ body {
 .registration-button {
 	text-decoration: none;
 	color:black;
-	width:120px;
+	width:133px;
 	height: 45px;
 	display: inline-block;
 	margin-top: 11px;
 	margin-right: 0;
-	margin-left: 10px;
+	margin-left: 8px;
 	background-color: white;
 	line-height: 45px;
 }
@@ -472,12 +478,14 @@ body {
 
 .title-user-section .user-name {
 	font-family: "Cuprum", sans-serif;
-	font-size: 21px;
-	text-decoration: none;
-	background-color: white;
-	position: relative;
-	height: 45px;
-	padding-top: 15px;
+    font-size: 21px;
+    text-decoration: none;
+    background-color: white;
+    position: relative;
+    height: 45px;
+    text-align: left;
+    width: 200px;
+    padding-top: 15px;
 }
 
 .title-user-section a {
@@ -591,8 +599,8 @@ body {
 }
 
 .main-nav a {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 26px;
+	padding-right: 31px;
 	text-decoration: none;
 	/*margin-right: 58px*/
 	width: 100%:;
@@ -780,11 +788,16 @@ body {
     text-transform: uppercase;
 } 
 
+.filter-brand-title {
+	font-weight: bold;
+}
+
+
 .filter-brand p {
 	position: relative;
 	font-size: 15px;
 	margin-left: 35px;
-	line-height: 13px;
+	line-height: 15px;
 }
 
 .filter-brand input {
@@ -825,8 +838,8 @@ body {
 
 .filter-type input[type="radio"] + .checkbox-indicator {
 	position: absolute;
-    top: -3px;
-    left: -30px;
+    top: -6px;
+    left: -34px;
     width: 25px;
     height: 25px;
     /*border: 2px solid #000000;*/
@@ -867,7 +880,7 @@ body {
 	position: relative;
 	margin-left: 35px;
 	font-size: 15px;
-	line-height: 13px;
+	line-height: 16px;
 }
 
 .filter-type input {
@@ -875,7 +888,7 @@ body {
 }
 
 .filter-type {
-	margin-bottom: 70px;
+	margin-bottom: 81px;
 }
 
 .catalog-content-page {
@@ -893,7 +906,7 @@ body {
 
 .catalog-sorting-title a {
 	display: inline-block;
-	margin-right: 68px;
+	margin-right: 65px;
 	text-transform: uppercase;
 	text-decoration: none;
   color:black;
@@ -926,7 +939,7 @@ body {
 
 .catalog-sorting-title .catalog-sorting-by-functional {
 	border-bottom: 1px dashed red;
-	margin-right: 36px;
+	margin-right: 40px;
 }
 
 .catalog-sorting-button:hover {
@@ -950,14 +963,14 @@ body {
 }
 
 .catalog-pagination a {
-	color: black;
-	text-decoration: none;
-	min-width: 38px;
-	height: 38px;
-	border:2px solid #f7f3ec;
-	border-radius: 3px;
-	display: inline-block;
-	font-size: 12px;
+    color: black;
+    text-decoration: none;
+    min-width: 38px;
+    height: 38px;
+    border: 2px solid #f7f3ec;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 12px;
     font-size: 13px;
     font-family: "PT Sans";
     text-transform: uppercase;
@@ -966,9 +979,13 @@ body {
     padding-top: 9px;
     padding-left: 13px;
     padding-right: 13px;
-    margin-top: 24px;
+    margin-top: 30px;
     margin-bottom: 58px;
-    margin-right: 10px;
+    margin-right: 11px;
+}
+
+.catalog-pagination .pagination-next {
+	padding: 9px 30px;
 }
 
 .catalog-pagination a:hover {
@@ -997,8 +1014,8 @@ body {
 
 .feature-block p {
 	margin:0;
-	margin-top:24px;
-	margin-left: 20px;
+	margin-top:26px;
+	margin-left: 25px;
 	font-family: 'Cuprum', sans-serif;
 	font-size: 24px;
 	font-weight: bold;
@@ -1012,8 +1029,8 @@ body {
 	color: white;
 	display:inline-block;
 	box-sizing: border-box;
-	margin-top: 25px;
-	margin-left: 22px;
+	margin-top: 20px;
+    margin-left: 24px;;
 	padding-top:10px; 
 	background-color: rgba(0,0,0,0.1);
 	border-radius: 3px;
@@ -1071,7 +1088,7 @@ body {
 	/*background-color: white;*/
 	position: absolute;
 	top:50%;
-	right: 70px;
+	right: 65px;
 	margin-top: -30px;
 	margin-right: -35px;
 }
@@ -1203,11 +1220,12 @@ body {
 }
 
 .block-perforators p.block-perforators-slogan {
-  margin-top:10px;
-  font-size: 18px;
-  font-family: "PT Sans";
-  font-weight: normal;
-  color: white;
+	letter-spacing: 0.5px;
+    margin-top: 7px;
+    font-size: 18px;
+    font-family: "PT Sans";
+    font-weight: normal;
+    color: white;
 }
 
 .block-perforators a {
@@ -1215,15 +1233,15 @@ body {
 	color: white;
 	display:inline-block;
 	box-sizing: border-box;
-	margin-top: 120px;
-	margin-left: 22px;
+	margin-top: 125px;
+    margin-left: 24px;
 	padding-top:10px; 
 	background-color: #ff5357;
 	border-radius: 3px;
 	vertical-align: middle;
 	text-align: center;
 	min-height: 37px;
-	width: 200px;
+	width: 196px;
 }
 
 .perforators-slider-1 {
@@ -1263,8 +1281,8 @@ body {
 	background-image: url("../img/block-discounts-icon.png");
 	/*background-color: white;*/
 	position: absolute;
-	top:50%;
-	right: 70px;
+	top:47%;
+	right: 67px;
 	margin-top: -30px;
 	margin-right: -20px;
 }
@@ -1299,6 +1317,7 @@ body {
 }
 
 .popular-items-header h2 {
+	letter-spacing: -1.0px;
 	display: inline-block;
 	margin: 0;
 	margin-top: 32px;
@@ -1358,10 +1377,10 @@ body {
 	text-align:center;
 	margin-right:22px;
 	width:218px;
-	min-height: 318px;
+	min-height: 316px;
 	display: inline-block;
 	vertical-align: top;
-	border: 1px solid gray;
+	border: 1px solid #f1f1f1;
 	position: relative;
 }
 
@@ -1450,8 +1469,9 @@ body {
 }
 
 .catalog-item-image-wrapper {
+    line-height: 165px;
+    text-indent: -16px;	
 	height:180px;
-	line-height: 180px;
 }
 
 
@@ -1463,7 +1483,10 @@ body {
 .catalog-item-title {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 18px;
+	width: 190px;
+	line-height: 18px;
 	font-weight: bold;
+	display: inline-block;
 
 }
 
@@ -1472,7 +1495,7 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: bold;
 	font-size: 17px;
-	margin-top: 10px;
+	margin-top: 11px;
 	margin-bottom: 10px;
 	color:#999999;
 }
@@ -1488,16 +1511,16 @@ body {
 	/*vertical-align: middle;*/
 	height: 38px;
 	width: 140px;
-	display:block;
+	display:inline-block;
 	background-image: url("../img/popular-item-button.png");
 	margin-top: 18px;
 	margin-left: 45px;
+	margin:0;
 }
 
 .catalog-item-title + .catalog-item-price-button {
-	margin-top: 45px;
+	margin-top: 35px;
 }
-
 
 
 
@@ -1557,7 +1580,7 @@ body {
 	vertical-align: top;
 	border: 1px solid gray;
 	min-height:143px;
-	line-height: 143px;
+	line-height: 128px;
 }
 
 .popular-brand:hover {
@@ -1570,9 +1593,9 @@ body {
 }
 
 
-.popular-brand:nth-child(4),
-.popular-brand:nth-child(8) {
-	float:right;
+.popular-brand:nth-child(5),
+.popular-brand:nth-child(9) {
+	/*float:right;*/
 	margin-right:0px;
 }
 
@@ -1640,10 +1663,22 @@ body {
 
 .company-service-feature-list {
 	display: inline-block;
-	padding-top: 70px;
+	padding-top: 60px;
 	width: 240px;
+	font-size: 22px;
 	line-height: 60px;
 	min-height: 180px;
+	position: relative;
+}
+
+.company-service-feature-list:before {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height:272px;
+	top: 10px;
+	right: 0;
+	background: url("../img/company-features-tab-shadow.png");
 }
 
 .company-service-feature-list ul {
@@ -1703,7 +1738,7 @@ body {
 	text-indent: 20px;
 	width: 100%;
 	height: 100%;
-	color: ##3d546e;
+	color: #3d546e;
 	background-color: #ffffff;
 }
 
@@ -1719,7 +1754,7 @@ body {
 .feature-delivery {
 	margin-top: 30px;
 	vertical-align: top;
-	padding-left: 80px;
+	padding-left: 74px;
 	display: inline-block;
 	width: 300px;
 	min-height: 175px;
@@ -1734,14 +1769,14 @@ body {
 	background-image: url("../img/company-features-delivery-icon.png");
 	width:468px;
 	height: 271px;
-	left:208px;
+	left:226px;
 	top:55px;
 }
 
 .feature-guarantee {
     margin-top: 30px;
 	vertical-align: top;
-	padding-left: 80px;
+	padding-left: 74px;
 	display: inline-block;
 	width: 300px;
 	min-height: 175px;
@@ -1762,7 +1797,7 @@ body {
 
 .feature-credit {
 	vertical-align: top;
-	padding-left: 80px;
+	padding-left: 74px;
 	display: inline-block;
 	width: 300px;
 	min-height: 175px;
@@ -1825,28 +1860,36 @@ body {
 	padding: 0;
 }
 
+.about-company-description p {
+	font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
 
 .about-company-list ul {
-	font-family: "PTSans", sans-serif;
-	font-size: 14px;
+	padding-left: 35px;
+	font-family: "Cuprum", sans-serif;
+	font-size: 18px;
 	font-weight: bold;
 	list-style: none;
 }
 
 .about-company-list li {
 	position: relative;
-	margin-top: 23px;
+	margin-top: 17px;
 }
 
 .about-company-list li:before {
 	position: absolute;
-	content: "";
-	top:-4px;
-	left:-45px;
-	width:30px;
-	height:15px;
-	border-bottom: 2px solid #ff716f;
-	z-index: 50;
+    content: "";
+    top: -3px;
+    left: -36px;
+    width: 25px;
+    height: 15px;
+    border-bottom: 2px solid #ff716f;
+    z-index: 50;
 }
 
 .about-company-button {
@@ -1879,6 +1922,9 @@ body {
 
 .company-contacts-description {
 	min-height: 75px;
+	font-family: "PT Sans", sans-serif;
+	font-size: 13px;
+	line-height: 24px;
 }
 
 .company-contacts-button {
@@ -1957,7 +2003,7 @@ body {
 }
 
 .popup-top {
-	min-height: 310px;
+	min-height: 320px;
 	position: relative;
 	box-sizing: border-box;
 	padding: 40px 80px 0 80px;
@@ -1993,14 +2039,23 @@ body {
 	color:#a9a9a9;
 }
 
+.popup input {
+	box-sizing: border-box;
+	padding: 10px 15px;
+	height: 34px;
+	width: 220px;
+}
+
 .popup-top .popup-textarea-section {
 	width: 460px;
 	height: 110px;
 }
 
 .popup-top .popup-textarea-section textarea {
+	padding: 10px 15px;
 	width: 460px;
 	height: 110px;
+	box-sizing: border-box;
 }
 
 .popup-bottom {
@@ -2140,22 +2195,25 @@ body {
 }
 
 .about-perforators h2 {
-  margin: 0;
-  padding: 0;
-  padding-top: 70px;
-  font-size: 30px;
-  font-family: "Cuprum";
-  color: black;
-  text-transform: uppercase;
+	letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    font-size: 30px;
+    font-family: "Cuprum";
+    color: black;
+    text-transform: uppercase;
 }
 
 .about-perforators p {
-	margin: 0;
-	padding: 0;
-	font-family: "PT Sans", sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	padding-top: 35px;
+	letter-spacing: 0.1px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding-top: 33px;
+}
 }
 
 /* почему footer-nav не переносится вправо внутри
@@ -2166,7 +2224,7 @@ body {
 	display: inline-block;
 	color:white;
 	min-height: 50px;
-	margin-top: 30px;
+	margin-top: 26px;
 }
 
 .footer-nav {
@@ -2210,6 +2268,7 @@ body {
 }
 
 .footer-nav-bottom {
+	word-spacing: 27px;
 	padding: 0;
 	/*margin-right: 35px;*/
 	margin-top: 0;
@@ -2218,7 +2277,7 @@ body {
 }
 
 .footer-pagination-bottom {
-	margin-left: 40px;
+	margin-left: 27px;
 	color: #ffda96;
 	text-decoration: none;
 }
@@ -2310,12 +2369,12 @@ body {
 
 .footer-developed {
 	font-size: 16px;
-	color:white;
-	margin-top: 38px;
-	margin-left: 25px;
-	float: left;
-	min-height: 40px;
-	width: 130px;
+    color: white;
+    margin-top: 38px;
+    margin-left: 44px;
+    float: left;
+    min-height: 40px;
+    width: 110px;
 }
 
 .footer-developed a {
